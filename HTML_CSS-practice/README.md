@@ -1,1 +1,1 @@
-This is a directory for my HTML/CSS related practical tasks, challenges or practical projects. Practising knowledge i recently learned or some experiment I'm doing with the language before I do the actual project or task.
+This is a directory for my HTML/CSS related practical tasks, challenges or practical projects. Practising knowledge i recently learned or some experiment I'm doing with the language before I do the actual project or task, either a mock project or for fun.
