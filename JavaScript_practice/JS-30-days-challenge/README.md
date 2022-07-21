@@ -1,0 +1,1 @@
+This directory contains challenges, tasks and/or projects i completed for the JavaScript 30 days challenge task.

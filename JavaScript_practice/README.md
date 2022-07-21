@@ -1,1 +1,1 @@
-This is a directory for my JavaScript related practical tasks, challenges or practical projects. Practising knowledge i recently learned or some experiment I'm doing with the language before I do the actual project or task, either a mock project or for fun.
+This is a directory for my JavaScript related practical tasks, challenges or practical projects. Practising knowledge i recently learned or some experiment I'm doing with the librar, either a mock project or for fun. before I do the actual project or task.
