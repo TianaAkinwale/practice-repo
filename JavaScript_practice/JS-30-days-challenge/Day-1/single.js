@@ -1,0 +1,1 @@
+let first_name = 'Tiana', lastName = 'Akinwale', isMarried = "false", country = 'Nigeria', age = 'null'
