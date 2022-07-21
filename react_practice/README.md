@@ -1,1 +1,1 @@
-This directory includes my practice work for React, everything and anything REACT.
+This is a directory for my React related practical tasks, challenges or practical projects. Practising knowledge i recently learned or some experiment I'm doing with the library before I do the actual project or task.

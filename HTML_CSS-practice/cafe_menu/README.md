@@ -1,0 +1,1 @@
+This directory contains codes i used to create a Cafe Menu website. I used this mini project to practice the knowledge i gained from a freecodecamp course, some of which are the proper use of the article element and css width property and embedding divs.
