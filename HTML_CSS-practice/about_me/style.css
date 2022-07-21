@@ -1,0 +1,95 @@
+@media screen and (max-width: 550px) {
+    #name {
+      font-size: 45px
+    }
+  }
+html{
+      box-sizing: border-box;
+  }
+body {
+    padding-left: 43px;
+    padding-right: 43px;
+    margin: 61px, 0px, 61px, 0px auto;
+    background-color: rgb(213, 213, 119);
+    line-height: 1.5;
+}
+header {
+    padding: 35px;
+    background-color: rgb(182, 140, 182);
+    font-size: 21px;
+    text-align: center;
+    line-height: 1.5;
+}
+#name {
+    font-size: 70px;
+}
+#nav {
+    background-color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
+    padding: 6px;
+    font-size: 19px;
+    text-align: center;
+    line-height: 1.5;
+    /*position: absolute;
+    top: 0;
+    right: 0;
+}
+.submenu {
+    display: none;*/
+}
+nav ul {
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+}
+.link {
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.link:hover {
+    background-color: rgb(213, 213, 119);
+    border-radius: 9px;
+}
+aside {
+  float: right;
+  border: 3px solid black;
+  border-radius: 13px;
+}
+img {
+    width: 500px;
+    height: 500px;
+}
+.section {
+    padding: 3px;
+    font-size: 17px;
+}
+.footer{
+    padding: 21px;
+    text-align: center;
+}
+#button {
+    padding: 12px;
+    padding-right: 21px;
+    padding-left: 21px;
+    border-radius: 7px;
+    background-color: rgb(154, 205, 50);
+    font-size: 20px;
+}
+#button:hover {
+    background-color: rgb(243, 243, 4);
+    animation: alternate;
+}
+.sub {
+    font-size: 32px;
+}
+/*.animations {
+    animation-name: Zuributtons;
+    animation-duration: 2s;
+    position: relative;
+}
+@keyframes Zuributtons {
+    
+}*/

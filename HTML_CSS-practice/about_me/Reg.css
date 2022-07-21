@@ -1,0 +1,62 @@
+@media screen and (max-width: 500px) {}
+body {
+    background-color: rgb(213, 213, 119);
+}
+
+form{
+    background: rgb(213, 213, 119);
+    padding: 1em 2em 2em;
+    max-width: 400px;
+    margin: 50px auto 0;
+    box-shadow: 0 0 6em rgb(182, 149, 192);
+    border-radius: 4px;
+}
+h1 {
+    background-color: rgb(213, 213, 119);
+    font-size: 50px;
+    text-align: center;
+    font-family: Sofia, cursive;
+}
+h1:hover {
+    font-size:65px;
+    border-radius: 50px;
+}
+input:hover {
+    font-size: 20px;
+}
+.inputs {
+    border: none;
+    background-color: transparent;
+    width: 400px;
+    padding: 20px 0px;
+    border-bottom: 1px solid #5a466b;
+    outline: none;
+    display: block;
+}
+.footer{
+    padding: 30px;
+    text-align: center;
+}
+#button {
+    padding: 20px;;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 11px;
+    background-color: rgb(154, 205, 50);
+    font-size: 20px;
+}
+#button:hover {
+    background-color: rgb(209, 154, 202);
+    animation: alternate;
+}
+.sign {
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 11px;
+    background-color: rgb(209, 154, 202);
+    font-size: 20px;
+}
+.sign:hover {
+    background-color: rgb(154, 205, 50);
+    animation: alternate;
+}
