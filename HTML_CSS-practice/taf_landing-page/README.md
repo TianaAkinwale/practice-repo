@@ -1,0 +1,1 @@
+This directory includes code i used to create a landing page for a fashion business. This was inpired by Ameer Bambigbayan's creation of Schweppes landing page. i recreated his work but for another business. 

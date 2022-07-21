@@ -1,0 +1,54 @@
+body {background-color:rgb(56, 54, 54);}
+p {color:white;}
+ul {color:white;}
+.img {
+    position: relative;
+    margin-top: 35px;
+    margin-left: 95px;}
+.class1,a {
+    margin-top: 5px;
+    margin-left: 95px;
+    color: white;
+    font-size: 20px;}
+.class1 h2 {
+    font-size: 50px;
+    color: white;
+    font-weight: 900;
+}
+.class2 a{display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: yellow;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid purple;
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 3px 4px black;
+    animation-name: learn;
+    animation-duration: 3s;
+    position: relative;}
+    @keyframes learn{
+        from{
+            left: 0px;
+             background-color: yellow;
+             font-family: 'Poppins', sans-serif;
+             border: 2px solid purple;
+             padding: 10px 30px;
+             border-radius: 25px;
+            }
+        to{
+            left: 180px;
+            background-color: purple;
+            font-family: 'Poppins', sans-serif;
+            border: 2px solid yellow;
+            padding: 10px 30px;
+            border-radius: 25px;}
+            }
+.class2 a:hover{
+    background-color: purple;
+    color: white;
+    border-color: yellow;}
