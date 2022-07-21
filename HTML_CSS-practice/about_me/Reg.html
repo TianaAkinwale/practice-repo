@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Reg.css">
+    <script>
+        function myFunction() {
+            document.getElementById("Regmessage").innerHTML ="Regstration Successful! You can now Log In to access our Home Page";
+        }
+    </script>
+    <title>Registration</title>
+</head>
+<body>
+    <div class="juice">
+        <div class="center">
+        <h1>REGISTER</h1>
+    <main>
+        <section>
+            <form method="post">
+                <input type="text" id="names" class="inputs" name="Names" placeholder="First Name"> <br>
+                <input type="text" id="names" class="inputs" name="Names" placeholder="Last Name"> <br>
+                <input type="email" id="names" class="inputs" name="Names" placeholder="Email"><br>
+                <input type="number" id="names" class="inputs" name="number" placeholder="Phone Number"><br>
+                <select class="inputs" name="Gender" id="Gender">
+                    <option class="inputs" value="Gender">Gender</option>
+                    <option class="inputs" value="Male">Male</option>
+                    <option class="inputs" value="Female">Female</option>
+                </select><br>
+                <input type="text" id="names" class="inputs" name="Names" placeholder="Country"><br>
+                <input type="text" id="names" class="inputs" name="Names" placeholder="State / Province"><br>
+                <input type="password" id="names" class="inputs" name="Names" placeholder="Password"><br>
+                <input type="password" id="names" class="inputs" name="Names" placeholder="Confirm Password"><br>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+        <button id="button" onclick="myFunction()"><a href="#">REGISTER</a></button>
+        <p id="Regmessage">Already have an account?</p><a class="sign" href="Login.html">LogIn</a> <br><br><a  class="sign" href="Contact.html">ContactMe</a>
+        </div>
+    </footer>
+        </div>
+    </div>
+</body>
+</html>
