@@ -27,4 +27,4 @@ console.log(challenge.match('a'))
 let word = '30'
 
 console.log(word.concat("Days ", "Of ", "JavaScript "))
-console.log(challenge.repeat(2)) 
+console.log(challenge.repeat(2))
