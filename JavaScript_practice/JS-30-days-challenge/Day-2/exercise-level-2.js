@@ -4,6 +4,10 @@ by John Holmes teaches us to help one another.`)
 console.log(`\"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the 
 same -- with charity you give love, so don't just give money but reach out your hand instead.\"`)
 
+console.log(typeof parseInt('10') === typeof 10)
+
+console.log(typeof Math.ceil(parseInt('9.8')) === typeof 10)
+
 let check = 'python jargon'
 console.log(check.search('on'))
 
@@ -19,6 +23,7 @@ console.log(num2)
 //var number = Math.floor(Math.random() * (max - min) + min);
 let num3 = Math.floor(Math.random () * (100 - 50) + 50)
 console.log(num3)
+
 
 console.log(`1 1 1 1 1
 2 1 2 4 8
