@@ -46,13 +46,6 @@ const areaOfC = (2 * (PI * radius))
 console.log(areaOfC)
 
 /*5. Calculate the slope, x-intercept and y-intercept of y = 2x -2*/
-
-let x = prompt('Enter x-intercept')
-let y = prompt('Enter y-intercept')
-y = 2(x) - 2
-const slope = y
-console.log(slope)
-
 /*6. Slope is m = (y<sub>2</sub>-y<sub>1</sub>)/(x<sub>2</sub>-x<sub>1</sub>).
 Find the slope between point (2, 2) and point(6,10)*/
 /*7. Compare the slope of above two questions.*/
@@ -165,3 +158,11 @@ let num = numo.getMilliseconds()
    1. YYYY-MM-DD HH:mm
    2. DD-MM-YYYY HH:mm
    3. DD/MM/YYYY HH:mm*/
+
+const dateFormat = new Date();
+dateYear = dateFormat.getFullYear();
+dateMonth = dateFormat.getMonth()
+dateDay = dateFormat.getDay()
+dateHour = dateFormat.getHours()
+dateMin = dateFormat.getMinutes()
+console.log(`${dateYear}-${dateMonth}-${dateDay} ${dateHour}-${dateMin}`)
