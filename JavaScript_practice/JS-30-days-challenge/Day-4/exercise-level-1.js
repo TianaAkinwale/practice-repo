@@ -1,0 +1,74 @@
+/*1. Get user input using prompt(“Enter your age:”). If user is 18 or older,
+give feedback:'You are old enough to drive' but if not 18 give another 
+feedback stating to wait for the number of years he needs to turn 18.
+
+Enter your age: 30
+You are old enough to drive.
+
+Enter your age:15
+You are left with 3 years to drive.*/
+
+let yearBorn = prompt('Enter year of birth', 'Example: 2001')
+const time2 = new Date()
+const time3 = time2.getFullYear()
+const cond1 = (time3 - yearBorn)
+const cond2 = (cond1 - 18)
+if (cond1 >= 18) 
+{
+    console.log(`You are ${cond1}. You are old enough to drive`)
+} else 
+{
+    console.log(`You are ${cond1}. You will be allowed to drive after ${cond2} years.`)
+}
+
+/*2. Compare the values of myAge and yourAge using if … else. Based on the 
+comparison and log the result to console stating who is older (me or you). 
+Use prompt(“Enter your age:”) to get the age as input.
+
+Enter your age: 30
+You are 5 years older than me.*/
+
+let YourAge = prompt("Enter your age")
+const MyAge = 19
+let older = YourAge - MyAge
+let younger = MyAge - YourAge
+if (MyAge < YourAge) 
+{
+  console.log(`You are ${older} years older than me`)
+} else if (MyAge > YourAge)
+{
+  console.log(`You are ${younger} years younger than I am`)
+} else
+{
+  console.log('We are of same age')
+}
+
+/*3. If a is greater than b return 'a is greater than b' else 'a is 
+less than b'. Try to implement it in two ways
+
+using if else
+ternary operator.
+  let a = 4
+  let b = 3
+  4 is greater than 3*/
+
+const a = 4;
+const b = 3;
+if (a > b)
+{
+  return `${a} is greater than ${b}`;
+} else 
+{
+  return `${b} is greater than ${a}`;
+}
+
+//using tenary operator
+
+/*4. Even numbers are divisible by 2 and the remainder is zero. How do you 
+check, if a number is even or not using JavaScript?*/
+let num0 = num % 2
+if (num0 = 0) {
+  console.log(true)
+} else {
+  console.log(false)
+}
