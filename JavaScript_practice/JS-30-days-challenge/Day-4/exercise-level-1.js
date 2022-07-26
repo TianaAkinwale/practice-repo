@@ -65,10 +65,15 @@ if (a > b)
 //using tenary operator
 
 /*4. Even numbers are divisible by 2 and the remainder is zero. How do you 
-check, if a number is even or not using JavaScript?*/
-let num0 = num % 2
+check, if a number is even or not using JavaScript?
+Enter a number: 2
+2 is an even number
+Enter a number: 9
+9 is is an odd number.*/
+let num11 = prompt('Enter a number: ')
+let num0 = num11 % 2
 if (num0 = 0) {
-  console.log(true)
+  console.log(`${num11} is an even number`)
 } else {
-  console.log(false)
+  console.log(`${num11} is an odd number`)
 }
