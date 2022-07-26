@@ -37,8 +37,8 @@ console.log(names.charCodeAt('J'))
 17. Use indexOf to find the position of the first occurrence of the word because in the following sentence:
 'You cannot end a sentence with because because because is a conjunction' */
 let example = "You cannot end a sentence with because because because is a conjunction"
-console.log(example.indexOf('because')) 
-console.log(example.lastIndexOf('because'))
+console.log(challenge.indexOf('a')) 
+console.log(challenge.lastIndexOf('a'))
 console.log(example.search('because'))
 
 /*20. Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
