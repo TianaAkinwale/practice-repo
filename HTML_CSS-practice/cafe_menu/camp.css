@@ -34,6 +34,9 @@ img {
     margin-bottom: 5px;
     font-size: 18px;
   }
+.item:hover {
+    font-size: xx-large;
+}
 .prices {
     text-align: right;
     width: 20%;
@@ -44,4 +47,11 @@ img {
 }
 footer {
     text-align: center;
+}
+a {
+    color: rgb(204, 185, 185);
+}
+a:hover{
+    color: rgb(235, 148, 35);
+    font-size: 20px;
 }
