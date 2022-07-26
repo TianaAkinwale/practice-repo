@@ -29,6 +29,7 @@ else if (grade < 40 && grade >= 0)
 {
     console.log('F')
 }
+
 /*2. Check if the season is Autumn, Winter, Spring or Summer. If the user input is :
 September, October or November, the season is Autumn.
 December, January or February, the season is Winter.
