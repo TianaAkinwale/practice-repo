@@ -36,6 +36,22 @@ December, January or February, the season is Winter.
 March, April or May, the season is Spring
 June, July or August, the season is Summer*/
 
+let season = prompt('Enter a month to determine it\'s season')
+if (season == 'September' || season == 'October' || season == 'November')
+{
+    console.log('The season is Autumn')
+} else if (season == 'December' || season == 'January' || season == 'February')
+{
+    console.log('The season is Winter')
+} else if (season == 'March' || season == 'April' || season == 'May')
+{
+    console.log('The season is Spring')
+} else
+{
+    console.log('The season is Summer')
+}
+
+
 /*3. Check if a day is weekend day or a working day. Your script will take day as an input.
     What is the day  today? Saturday
     Saturday is a weekend.
@@ -48,3 +64,11 @@ June, July or August, the season is Summer*/
 
     What is the day today? FrIDAy
     Friday is a working day.*/
+
+let dAY = prompt('What is the day today?')
+if (dAY == 'Monday' || dAY == 'Tuesday' || dAY == 'Wednesday' || dAY == 'Thursday' || dAY == 'Friday') 
+{
+    console.log('Today is a working day')
+} else {
+    console.log('Today is the weekend')
+}
