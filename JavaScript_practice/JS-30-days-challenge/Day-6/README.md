@@ -1,4 +1,3 @@
-
 ## 💻 Exercises:Day 6
 
 ### Exercises: Level 1
