@@ -3,7 +3,7 @@
 //chooseName.countries; // You can now access the array
 
 /*2. First remove all the punctuations and change the string to array and 
-count the number of words in the array
+count the number of words in the array*/
 
     ```js
     let text =
@@ -17,7 +17,7 @@ count the number of words in the array
     "teach", "HTML", "CSS", "JS", "React", "Python"]
   
     13
-    ```*/
+    ```
 
 let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
 let text2 = (text.replace(/[,.]/g, ""))
