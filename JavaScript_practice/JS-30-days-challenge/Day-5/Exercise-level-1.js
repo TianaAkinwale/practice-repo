@@ -1,29 +1,3 @@
-/*```js
-const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya'
-]
-
-const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB'
-]
-```*/
-
 /*1. Declare an _empty_ array;*/
 const arr = Array()
 let ar = new Array()
@@ -81,6 +55,7 @@ if(company === -1){
 }
 
 /*14. Filter out companies which have more than one 'o' without the filter method*/
+//let check = itCompanies.find()
 
 /*15. Sort the array using _sort()_ method*/
 console.log(itCompanies.sort())
@@ -101,6 +76,9 @@ console.log(itCompanies.slice(3, 4))
 console.log(itCompanies.shift())
 
 /*21. Remove the middle IT company or companies from the array*/
+itCompanies.splice(3,1)
+
 /*22. Remove the last IT company from the array*/
 console.log(itCompanies.pop())
 /*23. Remove all IT companies*/
+itCompanies.splice()
