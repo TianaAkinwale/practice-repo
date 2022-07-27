@@ -66,9 +66,32 @@ if (season == 'September' || season == 'October' || season == 'November')
     Friday is a working day.*/
 
 let dAY = prompt('What is the day today?')
-if (dAY == 'Monday' || dAY == 'Tuesday' || dAY == 'Wednesday' || dAY == 'Thursday' || dAY == 'Friday') 
+const inday = dAY.toLowerCase()
+if (inday == 'monday')
 {
-    console.log('Today is a working day')
-} else {
-    console.log('Today is the weekend')
+    console.log('Monday is a working day')
+} 
+else if (inday == 'tuesday')
+{
+    console.log('Tuesday is a working day')
+} 
+else if (inday == 'wednesday')
+{
+    console.log('Wednesday is a working day')
+} 
+else if (inday == 'thursday')
+{
+    console.log('Thursday is a working day')
+} 
+else if (inday == 'friday')
+{
+    console.log('Friday is a working day')
+} 
+else if (inday == 'saturday')
+{
+    console.log('Saturday is a weekend')
+} 
+else
+{
+    console.log('Sunday is a weekend')
 }
