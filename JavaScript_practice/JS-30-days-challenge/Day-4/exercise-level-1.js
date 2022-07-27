@@ -8,17 +8,14 @@ You are old enough to drive.
 Enter your age:15
 You are left with 3 years to drive.*/
 
-let yearBorn = prompt('Enter year of birth', 'Example: 2001')
-const time2 = new Date()
-const time3 = time2.getFullYear()
-const cond1 = (time3 - yearBorn)
-const cond2 = (cond1 - 18)
-if (cond1 >= 18) 
+let userAge = prompt('Enter your age')
+let cond3 = (18 - userAge)
+if (userAge >= 18) 
 {
-    console.log(`You are ${cond1}. You are old enough to drive`)
+    console.log(`You are old enough to drive`)
 } else 
 {
-    console.log(`You are ${cond1}. You will be allowed to drive after ${cond2} years.`)
+    console.log(`You are left with ${cond3} years to drive.`)
 }
 
 /*2. Compare the values of myAge and yourAge using if … else. Based on the 
