@@ -18,7 +18,8 @@ let statement = document.querySelector(".result-statement");
 
 let BMI, height, weight;
 
-button.addEventListener("click", ()=>{
+button.addEventListener("click", function(calculateButton){
+    calculateButton.preventDefault()
 
     height = heightInput.value;
 
@@ -48,4 +49,4 @@ button.addEventListener("click", ()=>{
 
     }
 
-});
+}).preventDefault();
