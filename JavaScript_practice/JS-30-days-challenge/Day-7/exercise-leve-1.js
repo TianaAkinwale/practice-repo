@@ -138,5 +138,4 @@ function _checkSeason_(num1, num2, num3) {
     else {
         return num3;
     }
-    let maxNum = 
 }
