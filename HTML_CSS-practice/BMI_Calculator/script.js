@@ -1,9 +1,7 @@
 function Bmi(weight, height)
 
 {
-
     return (weight / (Math.pow(height, 2)));
-
 }
 
 let heightInput = document.querySelector(".height");
@@ -37,7 +35,7 @@ button.addEventListener("click", function(calculateButton){
 
     }else if((BMI > 18.5) && (BMI < 24.9)){
 
-        statement.innerText = "Your BMI says your weight is in the n;rmal range";
+        statement.innerText = "Your BMI says your weight is in the normal range";
 
     }else if((BMI > 25) && (BMI < 29.9 )){
 
