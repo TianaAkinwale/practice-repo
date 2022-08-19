@@ -8,8 +8,8 @@
       xkqci4utda1lmbelpkm03rba
     ```*/
 
-let result           = '';
-let num = 7//prompt('Enter number of random characters to be generated')
+let result = '';
+let num = prompt('Enter number of random characters to be generated')
 let characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 let charactersLength = characters.length;
 for ( let y = 0; y < num; y++ ) {
@@ -35,17 +35,10 @@ console.log(random_hex_color_code())
     ```sh
     rgb(240,180,80)
     ```*/
-/*function getRandomRgb() {
-  var num = Math.round(0xffffff * Math.random());
-  var r = num >> 16;
-  var g = num >> 8 & 255;
-  var b = num & 255;
-  return 'rgb(' + r + ', ' + g + ', ' + b + ')';
-}
-
-for (var i = 0; i < 10; i++) {
-  console.log(getRandomRgb());
-}*/
+const r = Math.round(Math.random() * 256);
+const g = Math.round(Math.random() * 256);
+const b = Math.round(Math.random() * 256);
+console.log(`rgb(${r},${g},${b})`)
 
 /*1. Using the above countries array, create the following new array.
     ```sh

@@ -160,9 +160,9 @@ let num = numo.getMilliseconds()
    3. DD/MM/YYYY HH:mm*/
 
 const dateFormat = new Date();
-dateYear = dateFormat.getFullYear();
-dateMonth = dateFormat.getMonth()
-dateDay = dateFormat.getDay()
-dateHour = dateFormat.getHours()
-dateMin = dateFormat.getMinutes()
+let dateYear = dateFormat.getFullYear();
+let dateMonth = dateFormat.getMonth()
+let dateDay = dateFormat.getDay()
+let dateHour = dateFormat.getHours()
+let dateMin = dateFormat.getMinutes()
 console.log(`${dateYear}-${dateMonth}-${dateDay} ${dateHour}-${dateMin}`)
