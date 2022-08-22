@@ -55,7 +55,7 @@ if(company === -1){
 }
 
 /*14. Filter out companies which have more than one 'o' without the filter method*/
-//let check = itCompanies.find()
+//let check = itCompanies.filter()
 
 /*15. Sort the array using _sort()_ method*/
 console.log(itCompanies.sort())
