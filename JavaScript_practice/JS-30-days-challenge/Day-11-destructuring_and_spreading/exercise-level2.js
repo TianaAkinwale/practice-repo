@@ -52,4 +52,8 @@ const users = [
 ]
 
 /*1. Iterate through the users array and get all the keys of the object using destructuring*/
+for (const {name, scores, skills, age} of users) {
+  console.log(name, scores, skills, age)
+}
 /*2. Find the persons who have less than two skills*/
+users.map(skill => console.log(skill < 2))
