@@ -1,6 +1,6 @@
 ## Exercises
 
-### Exercises:Level 1
+### Exercises: Level 1
 
 ```js
 const a = [4, 5, 8, 9]
