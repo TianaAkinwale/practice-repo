@@ -50,12 +50,19 @@ const users = {
   }
 }
 /*1. Find the person who has many skills in the users object.*/
-const manySkills = users.find(user => user.length > 5)
-console.log(manySkills)
-/*1. Count logged in users, count users having greater than equal to 50 points from the following object.*/
+//const manySkills = users.find(user => user.length > 5)
+//console.log(manySkills)
+/*1. Count logged in users, count users having greater than equal to 50 points 
+from the following object.*/
+//users.filter(point => )
 /*1. Find people who are MERN stack developer from the users object*/
 /*1. Set your name in the users object without modifying the original users object*/
-
+users.Tiana = {}
+//console.log(users)
 /*1. Get all keys or properties of users object*/
+const keys = Object.keys(users);
+//console.log(keys)
 /*1. Get all the values of users object*/
+const values = Object.values(users.Alex)
+console.log(values)
 /*1. Use the countries object to print a country name, capital, populations and languages.*/

@@ -10,5 +10,14 @@ console.log(string.match('because'))
 
 /*4. Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000
  euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.' */
-let word = "He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month."
-console.log(word.match(/\d+/g))
+ const pattern = /\d+/g;
+ const text = "He earns 4000 euro from salary per month, 10000 euro annual\
+  bonus, 5500 euro online courses per month"
+  let matches = text.match(pattern)
+  console.log(matches)
+  let sum = 0;
+  for (let match of matches) {
+   match = parseInt(match, 10)
+   sum += match;
+  }
+  console.log(sum)
