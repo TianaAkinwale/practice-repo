@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+
+    <form action="#">
+        <label for="firstName">Enter Your First Name:</label> <br>
+        <input type="text" id="firstName" required class="textInput"> <br>
+        <label for="lastName">Enter Your Last Name:</label> <br>
+        <input type="text" id="lastName" required class="textInput"> <br>
+        <label for="email">Enter Your Email:</label> <br>
+        <input type="email" id="email" required class="textInput"> <br>
+        <label for="password">Create a New Password:</label> <br>
+        <input type="password" id="password" required class="textInput"> <br><br>
+        <hr> <br>
+        <input type="radio" id="personalAccount" name="accountType">
+        <label for="personalAccount">Personal Account</label> <br><br>
+        <input type="radio" id="businessAccount" name="accountType">
+        <label for="businessAccount">Business Account</label> <br><br>
+        <input type="checkbox" name="terms" id="terms">
+        <label for="terms">I accept the <a href="#">terms and conditions</a></label> <br><br>
+        <hr> <br>
+        <label for="picture">Upload a profile picture:</label>
+        <input type="file" name="picture" id="picture" class="textInput">
+        <label for="age">Input your age (years):</label> <br>
+        <input type="number" name="age" id="age" class="textInput"> <br>
+        <label for="dropdown">How did you hear about us?</label><br> <br>
+        <!--
+            <datalist id="Degree">
+            <option value="High School">High School</option>
+            <option value="Undergraduate">Undergraduate</option>
+            <option value="Graduate">Graduate</option>
+            <option value="Masters">Masters</option>
+        </datalist>
+        -->
+        <label for="bio">Provide a bio:</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="3" placeholder=
+        "I like coding on the beach ..." class="textInput"></textarea><br><br><br>
+
+        <button class="button">Submit</button>
+        </form>
+        
+</body>
+</html>
