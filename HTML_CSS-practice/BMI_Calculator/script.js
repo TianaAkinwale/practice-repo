@@ -10,7 +10,7 @@ let result = document.querySelector(".result");
 let statement = document.querySelector(".result-statement");
 let BMI, height, weight;
 
-button.addEventListener("click", function(calculateButton){
+button.addEventListener("click", (calculateButton) => {
     calculateButton.preventDefault()
     height = heightInput.value;
     weight = weightInput.value;
@@ -26,4 +26,4 @@ button.addEventListener("click", function(calculateButton){
     }else{
         statement.innerText = "Your BMI says you are obese";
     }
-}).preventDefault();
+});
