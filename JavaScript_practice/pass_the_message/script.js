@@ -5,6 +5,8 @@ const messagePassed = document.getElementById('messagePassed');
 submit.addEventListener('click', (returnMessage) => {
     returnMessage.preventDefault();
     messagePassed.innerHTML = message.value;
+    message.value = '';
+
 });
 
 function random() {
