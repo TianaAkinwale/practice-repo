@@ -7,41 +7,40 @@
     <link rel="stylesheet" href="style.css">
     <title>Registration Form</title>
 </head>
+
 <body>
     <h1>Registration Form</h1>
     <p>Please fill out this form with the required information</p>
 
     <form action="#">
-        <label for="firstName">Enter Your First Name:</label> <br>
-        <input type="text" id="firstName" required class="textInput"> <br>
-        <label for="lastName">Enter Your Last Name:</label> <br>
-        <input type="text" id="lastName" required class="textInput"> <br>
-        <label for="email">Enter Your Email:</label> <br>
-        <input type="email" id="email" required class="textInput"> <br>
-        <label for="password">Create a New Password:</label> <br>
-        <input type="password" id="password" required class="textInput"> <br><br>
+        <label for="firstName" class="label">Enter Your First Name:</label> 
+        <input type="text" id="firstName" required class="textInput"> 
+        <label for="lastName" class="label">Enter Your Last Name:</label> 
+        <input type="text" id="lastName" required class="textInput"> 
+        <label for="email" class="label">Enter Your Email:</label> 
+        <input type="email" id="email" required class="textInput"> 
+        <label for="password" class="label">Create a New Password:</label> 
+        <input type="password" pattern="[a-z0-5]{8,}" id="password" required class="textInput"> <br><br>
         <hr> <br>
         <input type="radio" id="personalAccount" name="accountType">
-        <label for="personalAccount">Personal Account</label> <br><br>
+        <label for="personalAccount">Personal Account</label><br><br>
         <input type="radio" id="businessAccount" name="accountType">
         <label for="businessAccount">Business Account</label> <br><br>
-        <input type="checkbox" name="terms" id="terms">
+        <input type="checkbox" name="terms" required id="terms">
         <label for="terms">I accept the <a href="#">terms and conditions</a></label> <br><br>
         <hr> <br>
-        <label for="picture">Upload a profile picture:</label>
+        <label for="picture" class="label">Upload a profile picture:</label>
         <input type="file" name="picture" id="picture" class="textInput">
-        <label for="age">Input your age (years):</label> <br>
-        <input type="number" name="age" id="age" class="textInput"> <br>
-        <label for="dropdown">How did you hear about us?</label><br> <br>
-        <!--
-            <datalist id="Degree">
-            <option value="High School">High School</option>
-            <option value="Undergraduate">Undergraduate</option>
-            <option value="Graduate">Graduate</option>
-            <option value="Masters">Masters</option>
-        </datalist>
-        -->
-        <label for="bio">Provide a bio:</label><br>
+        <label for="age" class="label">Input your age (years):</label> 
+        <input type="number" name="age" id="age" class="textInput"> 
+        <label for="dropdown" class="label">How did you hear about us?</label>
+        <select name="dropdown" id="dropdown">
+            <option value="Socials">Socials</option>
+            <option value="Friends">Friends</option>
+            <option value="Family">Family</option>
+            <option value="Google">Google</option>
+        </select><br>
+        <label for="bio" class="label">Provide a bio:</label>
         <textarea name="bio" id="bio" cols="30" rows="3" placeholder=
         "I like coding on the beach ..." class="textInput"></textarea><br><br><br>
 

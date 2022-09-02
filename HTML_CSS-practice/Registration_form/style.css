@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(1, 1, 31);
+    background-color: #1b1b32;
     color: white;
 }
 h1 {
@@ -21,9 +21,23 @@ form {
     max-width: 600px;
     font-size: large;
 }
+.textInput, textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+.label {
+    display: block;
+    margin: 0.5rem 0;
+  }
 .textInput {
     width: 100%;
-    background-color: rgb(78, 78, 92);
     display: block;
     border: none;
 }
@@ -35,8 +49,9 @@ a {
     padding-bottom: 5px;
     padding-left: 110px;
     padding-right: 110px;
-    background-color: rgb(32, 32, 223);
+    background-color: #0a0a23;
     border: 1px solid white;
     margin-left: 120px;
     margin-right: 120px;
+    color: bisque;
 }
