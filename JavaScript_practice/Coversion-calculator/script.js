@@ -2,11 +2,10 @@ let weightPD = document.getElementById('weightPD');
 let weightKG = document.getElementById('weightKG');
 let button = document.getElementById('btn');
 const kg = 0.453592;
-let letters = 'abcdefghijklmnopqrstuvwxyz'
 
 function PoundToKG(pound) {
     const KG = pound * kg;
-    return KG;
+    return KG.toFixed(2);
 }
 
 weightPD.addEventListener('input', () => {
