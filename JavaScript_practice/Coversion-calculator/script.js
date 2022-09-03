@@ -9,8 +9,9 @@ function PoundToKG(pound) {
     return KG;
 }
 
-button.addEventListener('click', () => {
-    weightKG.innerHTML = PoundToKG(weightPD.value);
+weightPD.addEventListener('input', () => {
+    let ans = PoundToKG(weightPD.value);
+    weightKG.innerHTML = `Your weight in KG IS: ${ans}`;
     if (weightPD.value <= 0) {
         weightKG.innerHTML = 'Input a valid weight value'
     }
