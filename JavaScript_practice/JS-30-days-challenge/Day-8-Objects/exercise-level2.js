@@ -62,7 +62,7 @@ users.Tiana = {}
 /*1. Get all keys or properties of users object*/
 const keys = Object.keys(users);
 //console.log(keys)
-/*1. Get all the values of users object*/
+/*1. Get all the values of Alex in the users object*/
 const values = Object.values(users.Alex)
 console.log(values)
 /*1. Use the countries object to print a country name, capital, populations and languages.*/
