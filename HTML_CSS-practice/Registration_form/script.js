@@ -27,13 +27,15 @@ let form = document.createElement('form');
 
 document.body.append(form);
 
-//let label = document.createElement('label');
- for (let i = 0; i < 11; i++) {
-    label.createElement('label');
-}
-label[0].id = 'firstName';
-label[0].textContent = 'Enter Your First Name:'
-label[1].id = 'lastName';
-label[1].textContent = 'Enter Your First Name:'
+let label1 = document.createElement('label');
+label1.id = 'firstName';
+label1.innerHTML = 'Enter Your First Name:'
+form.appendChild(label1);
 
-document.body.appendChild(label)
+//document.body.appendChild(label);
+//let label;
+/*for (let i = 0; i < 11; i++) {
+    label = document.createElement('label');
+    
+    form.appendChild(label);
+}*/
