@@ -5,19 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Countdown Timer</title>
+    <title>Math Game</title>
 </head>
 <body>
     <div id="main">
-        <div id="num">
-            <input type="number" class="nums" name="num1" id="num1">
-            +
-            <input type="number" class="nums" name="num2" id="num2">
-        </div><br>
+        <h1>Math Game!</h1>
+        <article id="nums">
+            <p class="p" id="num1"></p>
+            <p id="sign"></p>
+            <p class="p" id="num2"></p>
+        </article><br>
         <p>Answer</p>
         <input type="number" name="answer" id="answer"><br><br>
         <button id="button">Check</button> 
         <p id="output"></p>
+
+        <div id="result">
+            <p id="score"> 0</p>
+            <p id="info"></p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

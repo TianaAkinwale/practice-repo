@@ -100,21 +100,18 @@ in m2_. Write a function which calculates _bmi_. BMI is used to broadly define d
     - _Normal weight_: BMI is 18.5 to 24.9
     - _Overweight_: BMI is 25 to 29.9
     - _Obese_: BMI is 30 or more*/
-function Bmi(weight, height)
-
-{
-    return (weight / (Math.pow(height, 2)));
-
+function Bmi(weight, height){
     let Bmi = (weight / (Math.pow(height, 2)));
     if(Bmi < 18.5){
         console.log("Your BMI says you are Underweight");    
-    }else if((Bmi > 18.5) && (BMI < 24.9)){
+    }else if((Bmi > 18.5) && (Bmi < 24.9)){
         console.log("Your BMI says your weight is in the normal range");
-    }else if((Bmi > 25) && (BMI < 29.9 )){
+    }else if((Bmi > 25) && (Bmi < 29.9 )){
         console.log("Your BMI says you are overweight");
     }else{
         console.log("Your BMI says you are obese");
     }
+    return (weight / (Math.pow(height, 2)));
 }
 
 /*14. Write a function called _checkSeason_, it takes a month parameter and returns the
