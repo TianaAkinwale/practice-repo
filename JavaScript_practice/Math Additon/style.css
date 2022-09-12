@@ -1,11 +1,12 @@
 body {
     background-color:rgb(218, 177, 219);
-    padding-top: 80px;
+    padding-top: 40px;
 }
 p, h1, h3, li {color:black;}
-div {
+#main {
     background: rgb(255, 255, 255);
-      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
       padding-top: 20px;
       padding-right: 50px;
       padding-left: 50px;
@@ -13,8 +14,15 @@ div {
       max-width: 600px;
       box-shadow: 0 0 1em #222;
       border-radius: 2px;
+      text-align: center;
 }
-.class2 a{display: inline-block;
+#rules {
+    font-size: 20px;
+}
+#rules:hover {
+    font-size: 30px;
+}
+a{display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
     font-size: 12px;
@@ -26,7 +34,6 @@ div {
     border-radius: 25px;
     text-decoration: none;
     color: black;
-    box-shadow: 3px 4px black;
     animation-name: learn;
     animation-duration: 3s;
     position: relative;}
@@ -47,7 +54,7 @@ div {
             padding: 10px 30px;
             border-radius: 25px;}
             }
-.class2 a:hover{
+a:hover{
     background-color: purple;
     color: white;
     border-color: yellow;}

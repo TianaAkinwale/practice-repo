@@ -74,8 +74,17 @@ function setGameOver() {
     answer.disabled = true;
     reset.addEventListener('click', restart);
 }
+
+reset.addEventListener('click', restart);
+
 function restart() {
     wrong.innerHTML = 0;
+    v1 = (Math.floor(Math.random() * 8))
+    v2 = (Math.floor(Math.random() * 7))
+    num1.innerHTML = v1
+    num2.innerHTML = v2;
+    let calc = '+-/*';
+    sign.innerHTML = calc.charAt(Math.floor(Math.random() * calc.length));
     correct.innerHTML = 0;
     answer.disabled = false;
     statement.innerHTML = ''
