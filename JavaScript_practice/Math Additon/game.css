@@ -1,0 +1,81 @@
+body {
+    background-color:rgb(218, 177, 219);
+    padding-top: 35px;
+    color: black;
+}
+#sign {
+    font-size: 60px;
+}
+#main {
+    text-align: center;
+    background: rgb(255, 255, 255);
+      margin: auto;
+      padding-top: 30px; 
+      max-width: 500px;
+      box-shadow: 0 0 1em #222;
+      border-radius: 27px
+}
+#ansText {
+    font-size: 30px;
+    margin: 0;
+}
+#hs {
+    text-align: left;
+}
+#gameScore {
+    text-align: left;
+}
+#scoreT p, h3{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    padding: 2px;
+}
+#nums p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    padding: 20px;
+}
+#res p{
+    display: inline-block;
+    font-size: 25px;
+    padding: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+.p {
+    border: 3px solid rgb(43, 2, 59);
+    border-radius: 7px
+}
+#button {
+    padding: 5px;;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgb(43, 2, 59);
+    font-size: 20px;
+    border-radius: 7px;
+    border: solid rgb(43, 2, 59);
+    color: white;
+}
+#reset {
+    padding: 5px;;
+    padding-right: 8px;
+    padding-left: 8px;
+    background-color: rgb(43, 2, 59);
+    font-size: 20px;
+    color: white;
+    border: solid rgb(43, 2, 59);
+    border-radius: 7px;
+}
+#button:hover, #reset:hover {
+    cursor: pointer;
+}
+#answer {
+    width: 15%;
+    height: 40px;
+    border: 2px solid rgb(43, 2, 59);
+    border-radius: 17px
+}

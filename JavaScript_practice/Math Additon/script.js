@@ -11,7 +11,9 @@ wrong.innerHTML = 0;
 wrong.style.color = 'red';
 let statement = document.getElementById('statement');
 statement.innerHTML = '';
+statement.style.fontSize = '30px'
 let sign = document.getElementById('sign');
+sign.style.fontSize = '40px';
 let gameScore = document.getElementById('gameScore');
 gameScore.innerHTML = 0;
 
