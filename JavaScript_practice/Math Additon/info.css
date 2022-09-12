@@ -1,21 +1,20 @@
-body {background-color:rgb(56, 54, 54);}
-p {color:white;}
-ul {color:white;}
-.img {
-    position: relative;
-    margin-top: 35px;
-    margin-left: 95px;}
-.para1,a {
-    margin-top: 5px;
-    margin-left: 95px;
-    color: white;
-    font-size: 20px;}
-.para1 h2 {
-    font-size: 50px;
-    color: white;
-    font-weight: 900;
+body {
+    background-color:rgb(170, 136, 136);
+    padding-top: 80px;
 }
-.button a{display: inline-block;
+p, h1, h3, li {color:white;}
+div {
+    background: rgb(41, 39, 39);
+      margin: auto;
+      padding-top: 20px;
+      padding-right: 50px;
+      padding-left: 50px;
+      padding-bottom: 20px;
+      max-width: 600px;
+      box-shadow: 0 0 1em #222;
+      border-radius: 2px;
+}
+.class2 a{display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
     font-size: 12px;
@@ -29,7 +28,7 @@ ul {color:white;}
     color: black;
     box-shadow: 3px 4px black;
     animation-name: learn;
-    animation-duration: 3s;
+    animation-duration: 5s;
     position: relative;}
     @keyframes learn{
         from{
@@ -48,7 +47,7 @@ ul {color:white;}
             padding: 10px 30px;
             border-radius: 25px;}
             }
-.button a:hover{
+.class2 a:hover{
     background-color: purple;
     color: white;
     border-color: yellow;}

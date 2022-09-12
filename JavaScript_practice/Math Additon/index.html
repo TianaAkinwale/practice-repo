@@ -9,20 +9,27 @@
 </head>
 <body>
     <div id="main">
+        <article id="scoreT">
+            <h3 id="hs">PREVIOUS SCORE:</h3>
+            <p id="gameScore"></p>
+        </article>
         <h1>Math Game!</h1>
         <article id="nums">
             <p class="p" id="num1"></p>
             <p id="sign"></p>
             <p class="p" id="num2"></p>
         </article><br>
-        <p>Answer</p>
+        <p id="ansText">=</p>
         <input type="number" name="answer" id="answer"><br><br>
-        <button id="button">Check</button> 
-        <p id="output"></p>
+        <button id="button">CHECK</button> 
+        <button id="reset">RE-START</button>
 
         <div id="result">
-            <p id="score"> 0</p>
-            <p id="info"></p>
+            <p id="statement"></p>
+            <article id="res">
+                <p id="correct"></p>
+                <p id="wrong"></p>
+            </article>
         </div>
     </div>
     <script src="script.js"></script>
