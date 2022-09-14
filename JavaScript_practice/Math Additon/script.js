@@ -1,32 +1,61 @@
+//declaring variables and getting elements by their html id attribute value 
+//and assigning them to variables
 let num1 = document.getElementById('num1');
 let num2 = document.getElementById('num2');
 let answer = document.getElementById('answer');
-let button = document.getElementById('button');
-let reset = document.getElementById('reset');
+const button = document.getElementById('button');
+const reset = document.getElementById('reset');
 let correct = document.getElementById('correct');
-correct.innerHTML = 0;
-correct.style.color = 'green';
+correct.innerHTML = 0; //assigning an initial value for the variable
+correct.style.color = 'green'; //setting the text color of this variable
+
 let wrong = document.getElementById('wrong');
-wrong.innerHTML = 0;
-wrong.style.color = 'red';
+wrong.innerHTML = 0; //assigning an initial value for the variable
+wrong.style.color = 'red'; //setting the text color of this variable
+
 let statement = document.getElementById('statement');
 statement.innerHTML = '';
-statement.style.fontSize = '30px'
+statement.style.fontSize = '30px';  //setting the font size of this variable
+
 let sign = document.getElementById('sign');
 sign.style.fontSize = '40px';
+
 let gameScore = document.getElementById('gameScore');
 gameScore.innerHTML = 0;
 
-v1 = (Math.floor(Math.random() * 27))
-v2 = (Math.floor(Math.random() * 18))
-num1.innerHTML = v1
+v1 = (Math.floor(Math.random() * 37))  //assigning random values to a varible
+v2 = (Math.floor(Math.random() * 28))
+num1.innerHTML = v1  //assigning the variable to an html input
 num2.innerHTML = v2;
-let calc = '+-/*';
-sign.innerHTML = calc.charAt(Math.floor(Math.random() * calc.length));
+let calc = '+-/*'; //declaring and intializing our calculation signs
+//using methods to let the signs be random and assigning to the sign innerhtml
+sign.innerHTML = calc.charAt(Math.floor(Math.random() * calc.length)); 
 
-button.addEventListener('click', () => {
-    let v3;
+
+//function for check button
+function check() {
+    let v3; //variable to store result
+    /*switch (sign.innerHTML) {
+        case value:'+';
+        v3 = addNums(v1, v2);
+            break;
+        case value:'-';
+        v3 = subNums(v1, v2);
+            break;
+        case value:'/';
+        v3 = divNums(v1, v2);
+            break;
+            case value:'*';
+        v3 = mulNums(v1, v2);
+            break;
+        default:
+            break;
+    }*/
+
+    //conditions that tells function what to do when each sign is displayed
     if (sign.innerHTML == '+'){
+        /*calling basic calculation functions and using 
+        variables previously declared as arguments*/
         v3 = addNums(v1, v2);
     }
     if (sign.innerHTML == '-'){
@@ -39,57 +68,72 @@ button.addEventListener('click', () => {
         v3 = mulNums(v1, v2);
     }
 
+    //conditions that tells function what to do with the answer input
     if (answer.value == "") {
-        statement.innerHTML = 'Input an answer!'
+        statement.innerHTML = 'Input an answer'; //when user enters nothing
     }
     else if (v3 == answer.value) {
         statement.innerHTML = 'CORRECT!';
-        statement.style.color = 'green';
-        statement.style.fontSize = 'larger'
-        correct.innerHTML++;
+        statement.style.color = 'green'; //setting color of statement to green
+        statement.style.fontSize = 'larger' //setting font size of statement
+        correct.innerHTML++;  //incrementing correct count by 1
     } 
     else {
-        statement.innerHTML = 'WRONG!';
-        statement.style.color = 'red';
-        statement.style.fontSize = 'larger';
-        wrong.innerHTML++;
+        //outputing the correct answer when user is wrong
+        statement.innerHTML = `WRONG! ANS = ${v3}`; 
+        statement.style.color = 'red';//setting color of statement to red
+        statement.style.fontSize = 'larger';//setting font size of statement
+        wrong.innerHTML++;//decrementing correct count by 1
     }
-    answer.value = ""
 
+    //setting answer input to empty after previous lines of codes have been run
+    answer.value = "" 
+
+    //disabling input if user is incorrect 3 times
     if (wrong.innerHTML == 3) {
        statement.innerHTML = '!!!GAME OVER!!!';
-       setGameOver();
+       setGameOver(); //calling game over function
+       //setting game score to correct variable value
         gameScore.innerHTML = correct.innerHTML;
     }
 
-    v1 = (Math.floor(Math.random() * 8))
-    v2 = (Math.floor(Math.random() * 7))
+    //allowing random values to continue to be generated.
+    v1 = (Math.floor(Math.random() * 68))
+    v2 = (Math.floor(Math.random() * 57))
     num1.innerHTML = v1
     num2.innerHTML = v2;
     let calc = '+-/*';
     sign.innerHTML = calc.charAt(Math.floor(Math.random() * calc.length));
-});
+}
 
+//adding event listener to check button
+button.addEventListener('click', (check));
+
+//function sets game to be over when requirements are met
 function setGameOver() {
-    answer.disabled = true;
+    answer.disabled = true; //disabling answer input
+    //allow game to be reset when game is over
     reset.addEventListener('click', restart);
 }
 
+//adding event listener to reset button with a restart function that resets the game.
 reset.addEventListener('click', restart);
 
+//restart function, resetting all variables to initial state.
 function restart() {
     wrong.innerHTML = 0;
-    v1 = (Math.floor(Math.random() * 8))
-    v2 = (Math.floor(Math.random() * 7))
-    num1.innerHTML = v1
+    correct.innerHTML = 0;
+    v1 = (Math.floor(Math.random() * 78));
+    v2 = (Math.floor(Math.random() * 67));
+    num1.innerHTML = v1;
     num2.innerHTML = v2;
     let calc = '+-/*';
     sign.innerHTML = calc.charAt(Math.floor(Math.random() * calc.length));
-    correct.innerHTML = 0;
-    answer.disabled = false;
-    statement.innerHTML = ''
+    answer.disabled = false;//enabling answer input
+    statement.innerHTML = '';
 }
 
+//calculation functions
 function addNums(num1, num2) {
     let result = num1 + num2;
     return result;
@@ -100,7 +144,8 @@ function subNums(num1, num2) {
 }
 function divNums(num1, num2) {
     let result = num1 / num2;
-    return result.toFixed(1);//remind to put decimal answer to one decimal
+    return parseInt(result, 10);
+    //return parseInt(result, 10);//remind to put decimal answer to one decimal
 }
 function mulNums(num1, num2) {
     let result = num1 * num2;
