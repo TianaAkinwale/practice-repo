@@ -102,11 +102,11 @@ function getTimeLeft() {
   //when countdown ends
   if (t < 0) {
     //clearInterval(countdown);
-    userDeadlineOutput.textContent = 'RESET'
+    userDeadlineOutput.textContent = 'REFRESH PAGE'
     timesOutput.forEach((time) => {
       time.textContent = `00`;
      });
-    expired.textContent = `This timer has expired. Click RESET`;
+    expired.textContent = `This timer has expired.`;
   }; 
 }
 
@@ -115,10 +115,10 @@ function getTimeLeft() {
  getTimeLeft();
 }).preventDefault();
 
-reset.addEventListener('click', () => {
+/*reset.addEventListener('click', () => {
   userDeadlineOutput.innerHTML = ''
   timesOutput.forEach((time) => {
     time.innerHTML = '';
   });
   expired.innerHTML = '';
-})
+})*/

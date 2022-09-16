@@ -73,7 +73,7 @@ h4 {
     font-size: 20px;
     margin-top: 10px;
     color: white;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
 }
 .button:hover {
     background-color: rgb(15, 15, 15);
