@@ -11,11 +11,7 @@
     <div id="main">
         <h1>Create your own Countdown</h1>
         <p id="deadline-details">Select when Countdown ends: <br>
-            <input type="number" name="date" id="userYear" placeholder="Year">
-            <input type="number" name="date" id="userMonth" placeholder="Month">
-            <input type="number" name="date" id="userDate" placeholder="Date">
-            <input type="number" name="date" id="userHour" placeholder="Hour">
-            <input type="number" name="date" id="userMin" placeholder="Min">
+            <input type="datetime-local" name="user-deadline" id="user-deadline">
             <p id="userDeadline"></p>
         </p>
         <div id="countdown-time">
@@ -37,10 +33,8 @@
                     <p>SECS</p>
                 </div>
             </article>
-            <p id="expired-text"></p> <br>
+            <p id="expired-text"></p>
         </div>
-        <button type="reset" id="reset" class="button">Reset Countdown</button>
-        <button type="submit" id="start" class="button">Start Countdown</button>
     </div>
 
    <script src="script.js"></script>

@@ -1,31 +1,28 @@
-//user can select percentage of tip
+let cost = document.getElementById("cost");
+let percent = document.getElementById("percent");
+let tipStatement = document.getElementById("tip-statement");
+let button = document.getElementById('button');
 
-function Bmi(weight, height)
+function tip(cost, percent)
 {
-    return (weight / (Math.pow(height, 2)));
+    ans = (percent / 100) * cost;
+    return Math.ceil(ans);
 }
 
-let heightInput = document.querySelector(".height");
-let weightInput = document.querySelector(".weight");
-let calculateButton = document.querySelector(".button");
-let result = document.querySelector(".result");
-let statement = document.querySelector(".result-statement");
-let BMI, height, weight;
+button.addEventListener('click', (hhh) => {
+    hhh.preventDefault();
 
-button.addEventListener("click", (calculateButton) => {
-    calculateButton.preventDefault()
-    height = heightInput.value;
-    weight = weightInput.value;
-    BMI = Bmi(weight, height); 
-    result.innerText = BMI;
+    let c = tip(cost.value, percent.value);
+    tipStatement.style.fontSize = '30px';
+    tipStatement.innerHTML = `Tip to be given is ${c}`;
 
-    if(BMI < 18.5){
-        statement.innerText = "Your BMI says you are Underweight";    
-    }else if((BMI > 18.5) && (BMI < 24.9)){
-        statement.innerText = "Your BMI says your weight is in the normal range";
-    }else if((BMI > 25) && (BMI < 29.9 )){
-        statement.innerText = "Your BMI says you are overweight";
-    }else{
-        statement.innerText = "Your BMI says you are obese";
+    if(percent.value > 25){
+        tipStatement.innerHTML = `You are giving too much tip`;
     }
-});
+    else if (percent.value === ''){
+        tipStatement.innerHTML = `Please enter a value`;
+    }
+    else if(percent.value < 7){
+        tipStatement.innerHTML = `You are giving too litle tip`;
+    }
+}).preventDefault();
