@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+    <script>
+        function checknumber(){
+        var mobno=document.getElementById("number").value;
+        var regex=/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
+        
+        if(regex.test(mobno)){
+        document.getElementById("test").style.color="green";
+        document.getElementById("test").innerHTML="Valid";
+        }
+        else{
+        document.getElementById("test").style.color="red";
+        document.getElementById("test").innerHTML="Invalid: Enter as xxx-xxx-xxxx";
+        }
+        }
+        </script>
+</head>
+<body style="background-color: rgb(89, 11, 216);">
+    <div id="form" style="padding-top: 0px; padding-left: 100px;" >
+    <h1>A HTML Form</h1>
+    <p>Kindly fill the form below:</p>
+    <form autocomplete="on">
+        <label for="name">First Name</label><br>
+        <input type="text" name="name" required placeholder="First Name" title="This is required"><br>
+        <label for="name">Last Name</label><br>
+        <input type="text" name="name" required placeholder="Middle Name" title="This is required"><br>
+        <label for="name">Middle Name</label><br>
+        <input type="text" name="name" required placeholder="Last Name" title="This is required"><br>
+        <label for="name">Nick Name</label><br>
+        <input type="text" name="name" required placeholder="Nick Name" title="This is required" value="HTML"><br>
+        <label for="number">Phone Number</label><br>
+        <input type="number" name="name" required placeholder="xxx-xxx-xxxx" title="This is required" id="number" onblur="checknumber()"><span id="test"></span><br>
+        <label for="Level">Level of Qualification</label><br>
+        <input type="text" required placeholder="Level of Qualification" list="Degree"><br>
+        <datalist id="Degree">
+            <option value="High School">High School</option>
+            <option value="Undergraduate">Undergraduate</option>
+            <option value="Graduate">Graduate</option>
+            <option value="Masters">Masters</option>
+        </datalist>
+        <label for="Age">Age</label><br>
+        <input type="number" required placeholder="18-35" min="18" max="35"><br>
+        <label for="email">Email</label><br>
+        <input type="email" required placeholder="example@gmail.com"><br>
+        <label for="password">Password</label><br>
+        <input type="password" required><br><br>
+        <input type="submit" value="SUBMIT">
+    </form>
+    </div>
+</body>
+</html>

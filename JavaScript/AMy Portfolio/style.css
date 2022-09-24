@@ -1,0 +1,138 @@
+@media only screen and (min-width: 1200px) {
+  body {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  /*h3{
+    font-size: 51px;
+  }
+  #aboutPara {
+    width: 90%;
+  }*/
+}
+body {
+  background-color: rgb(10, 10, 10);
+  color: rgb(218, 205, 205);
+}
+header {
+  margin-top: 140px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 45px;
+  padding-right: 40px;
+  max-width: 1400px;
+}
+h3, h2 {
+  font-size: 41px;
+  margin: 0;
+}
+#aboutSection{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  margin-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 1400px;
+  border-radius: 9px;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+#aboutDiv{
+  border-left: 2px solid rgb(218, 205, 205);
+  padding-left: 40px;
+  font-size: 28px;
+}
+#aboutPara {
+  width: 90%;
+}
+#socialsLink{
+  color: beige;
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+img {
+  width: 350px;
+  height: 318px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px rgb(204, 199, 199);
+  cursor: pointer;
+}
+aside {
+  float: right;
+}
+#projectsSection {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  max-width: 1400px;
+  border-radius: 9px;
+  text-align: left;
+}
+h4 {
+  font-size: 40px;
+  margin-left: 0px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  margin-top: 6px;
+}
+.projectDiv {
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30%;
+  padding-bottom: 2%;
+  margin-bottom: 20px;
+  padding-left: 32px;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+  border-radius: 8px;
+  color: black;
+}
+#projectsDiv1 {
+  background-image: url(images/pic4.jpg);
+}
+#projectsDiv2 {
+  background-image: url(images/pic5.jpg);
+}
+#projectsDiv3 {
+  background-image: url(images/oouhut.jpeg);
+}
+#projectsDiv4 {
+  background-image: url(images/pic2.jpg);
+}
+#projectsSection, a {
+  text-decoration: none;
+  color: black;
+  font-size: 28px;
+}  
+#projectsSection, p {
+  margin-top: 0;
+  padding-top: 8px;
+}
+.projectNav {
+  font-size: 15px;
+}
+nav li {
+  display: inline-block;
+}
+li {
+  background-color: rgb(10, 10, 10);
+  padding-left: 10px;
+  border-radius: 11px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: rgb(255, 255, 255);
+}
+li:hover {
+  background-color: rgb(255, 255, 253);
+  border-radius: 11px;
+  color: rgb(10, 10, 10);
+  cursor: pointer;
+}
