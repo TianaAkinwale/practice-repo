@@ -5,12 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Word Count</title>
+    <title>Side Bar</title>
 </head>
 <body>
-    <h1>Type in the box</h1>
-    <textarea name="text" id="text" cols="30" rows="3"></textarea><br>
-    <button>Calculate Word length</button>
+    <button class="sidebar-toggle">
+        <i class="fas fa-bars">sidebar</i>
+    </button>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="icon-cart.svg" class="logo" alt="cart">
+            <button class="closeBtn">
+                <i class="fas fa-times">close</i>
+            </button>
+        </div>
+        <ul>
+            <li class="animations"><a href="index.html" class="link">Home</a></li>
+            <li class="animations"><a href="Reg.html" class="link">Registration</a></li>
+            <li class="animations"><a href="Login.html" class="link">Login</a></li>
+            <li class="animations"><a href="Contact.html" class="link">Contact</a></li>
+        </ul>
+    </aside>
+
     <script src="script.js"></script>
 </body>
 </html>

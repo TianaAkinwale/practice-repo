@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+.sidebar {
+    display: grid;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    transform: translate(-100%);
+    /*
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    box-shadow
+    transition
+
+    media screen and (min-width: 676px) {
+        .sidebar {
+            width: 400px;
+        }
+    }
+    */
+}
+.show-sidebar {
+    transform: translate(0);
+}
