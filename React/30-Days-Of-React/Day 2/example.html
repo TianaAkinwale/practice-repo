@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 Days Of React Challenge</title>
+  </head>
+
+  <body>
+    <div class="root"></div>
+
+    <!--
+      //importing React and ReactDOM using CDN or link.
+    -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!--
+      //Inside the babel, we can write any pure JavaScript,
+    // JSX and in general any React code.
+    -->
+    <script type="text/babel">
+      // To get the root element from the HTML document
+      const rootElement = document.querySelector('.root')
+      // JSX element, header
+      const welcome = 'Welcome to 30 Days Of React Challenge'
+      const title = 'Getting Started React'
+      const subtitle = 'JavaScript Library'
+      const author = {
+        firstName: 'Asabeneh',
+        lastName: 'Yetayeh',
+      }
+      const date = 'Oct 2, 2020'
+
+      // JSX element, header
+      const header = (
+        <header>
+          <div className='header-wrapper'>
+            <h1>{welcome}</h1>
+            <h2>{title}</h2>
+            <h3>{subtitle}</h3>
+            <p>
+              Instructor: {author.firstName} {author.lastName}
+            </p>
+            <small>Date: {date}</small>
+          </div>
+        </header>
+      )
+
+      const numOne = 3
+      const numTwo = 2
+
+      const result = (
+        <p>
+          {numOne} + {numTwo} = {numOne + numTwo}
+        </p>
+      )
+
+      const yearBorn = 1820
+      const currentYear = 2020
+      const age = currentYear - yearBorn
+      const personAge = (
+        <p>
+          {' '}
+          {author.firstName} {author.lastName} is {age} years old
+        </p>
+      )
+
+      // JSX element, main
+      const techs = ['HTML', 'CSS', 'JavaScript']
+      const techsFormatted = techs.map((tech) => <li key={tech}>{tech}</li>)
+
+      // JSX element, main
+      const main = (
+        <main>
+          <div className='main-wrapper'>
+            <p>
+              Prerequisite to get started{' '}
+              <strong>
+                <em>react.js</em>
+              </strong>
+              :
+            </p>
+            <ul>{techsFormatted}</ul>
+            {result}
+            {personAge}
+          </div>
+        </main>
+      )
+
+      const copyRight = 'Copyright 2020'
+
+      // JSX element, footer
+      const footer = (
+        <footer>
+          <div className='footer-wrapper'>
+            <p>{copyRight}</p>
+          </div>
+        </footer>
+      )
+
+      // JSX element, app
+      const app = (
+        <div className='app'>
+          {header}
+          {main}
+          {footer}
+        </div>
+      )
+
+      // we render the JSX element using the ReactDOM package
+      ReactDOM.render(app, rootElement)
+      // or
+      //  ReactDOM.render([header, main, footer], rootElement)
+    </script>
+  </body>
+</html>
+
+<script>
+/*Exercises: JSX Elements
+What is a JSX element?
+ A JSX elemet is JSX element could be a single HTML element or many HTML elements wrapped in a parent HTML element.
+
+Write your name in a JSX element and store it in a name variable
+const myName = <h1>Tiana Akinwale</h1>
+
+Write a JSX element which displays your full name, country, 
+title, gender, email, phone number. Use h1 for the name and p
+ for the rest of the information and store it in a user variable
+const name = 'Tiana Akinwale'
+const country = 'Nigeria'
+const title = 'My first React'
+const gender = 'female'
+const email = 'tianorway@gmail.com'
+const number = 345322345
+const user = (
+  <header>
+    <h1>{name}</h1>
+    <p>
+      country: {country}
+      title: {title}
+      gender: {gender}
+      email: {email}
+      number: {number}
+    </p>
+  </header>
+)
+
+Exercises: Inline Style
+Create a style object*/
+const styleObj = {border: '2px solid orange', color: 'black', fontSize: '18px'}
+const user = (
+  <header style={style}>
+    <h1>{name}</h1>
+    <p>
+      country: {country}
+      title: {title}
+      gender: {gender}
+      email: {email}
+      number: {number}
+    </p>
+  </header>
+)
+</script>
