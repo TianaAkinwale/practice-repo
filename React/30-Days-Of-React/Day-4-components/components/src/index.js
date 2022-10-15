@@ -7,11 +7,13 @@ import Tiana from './images/slack-dp.jpeg'
 
 const rootElement = document.getElementById('root');
 
-const user = (
+const User = () => {
+  return (
     <div>
         <img src={Tiana} alt='Tiana Akinwale'/>
     </div>
-)
+  )
+}
 
 const subscribe = 'SUBSCRIBE'
 const signUp = 'Sign up with your email address to receive news and updates'
@@ -25,30 +27,47 @@ const role = 'Software Engineer, Nigeria'
 const skills = ['HTML', 'CSS', 'JS', 'React', 'Python', 'Git', 'VSCode', 'Github']
 const skillTe = 'Skills'
 const skillsT = skills.map(skill => <p className='skills'>{skill}</p>)
+
+//Div component
+const DivSec = () => {
+  return (
+    <div className='second'><User />
+      <h3>{author.firstName} {author.lastName}</h3>
+      <p>{role}</p>
+      <h3>{skillTe}</h3>
+      <div className='skills flex'>
+          <p className="skills flex">{skillsT}</p>
+      </div>
+    </div>
+  )
+}
+
+//Div component
+const DivFir = () => {
+  return (
+    <div className='first'>
+      <h1 className="subs">{subscribe}</h1>
+      <p className="subs">{signUp}</p>
+      <form>
+        <input type="text" placeholder="First Name" required/>
+        <input type="text" placeholder="Last Name"/>
+        <input type="email" placeholder="Email" required/><br/>
+        <button>{button}</button>
+      </form> 
+    </div>
+  )
+}
 // JSX element main
 const main = (
     <main>
-        <div className='second'>
-            {user}
-            <h3>{author.firstName} {author.lastName}</h3>
-            <p>{role}</p>
-            <h3>{skillTe}</h3>
-            <div className='skills flex'>
-                <p className="skills flex">{skillsT}</p>
-            </div>
-        </div>
-        <div className='first'>
-            <h1 className="subs">{subscribe}</h1>
-            <p className="subs">{signUp}</p>
-            <form>
-                <input type="text" placeholder="First Name" required/>
-                <input type="text" placeholder="Last Name"/>
-                <input type="email" placeholder="Email" required/><br/>
-                <button>{button}</button>
-            </form> 
-        </div>
+      <DivSec />
+      <DivFir />
     </main>
 )
+
+const Main = () => {
+  return main
+}
 
 const copyRight = 'Copyright 2020'
 
@@ -61,11 +80,15 @@ const footer = (
     </footer>
 )
 
+const Footer = () => {
+  return footer
+}
+
 // JSX element, app, a container or a parent
 const app = (
     <div className='app'>
-        {main}
-        {footer}
+      <Main />
+      <Footer />
     </div>
 )
 
