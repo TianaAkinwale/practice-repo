@@ -1,5 +1,3 @@
-// importing the react and react-dom package and style file
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -129,4 +127,4 @@ const app = (
 )
 
 // we render the JSX element using the ReactDOM package
-ReactDOM.render(app, rootElement)
+ReactDOM.render(app, rootElement);
