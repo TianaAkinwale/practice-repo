@@ -1,3 +1,6 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
+@import url(https://fonts.google.com/specimen/Fraunces);
+
 @media only screen and (min-width: 717px) {
     body {
       margin-left: 425px;
@@ -29,8 +32,16 @@ body {
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
 }
+#floralText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+h2 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+}
 .cash p{
-    display: inline-block;
+    display: inline-block;    font-weight: 700;
 }
 #price {
     color: hsl(158, 36%, 37%);

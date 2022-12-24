@@ -1,0 +1,17 @@
+@media only screen and (min-width: 1200px) {
+    body {
+      padding-left: 120px;
+      padding-right: 120px;
+    }
+    /*h3{
+      font-size: 51px;
+    }
+    #aboutPara {
+      width: 90%;
+    }*/
+  }
+  body {
+    background-color: rgb(10, 10, 10);
+    color: rgb(218, 205, 205);
+  }
+  
