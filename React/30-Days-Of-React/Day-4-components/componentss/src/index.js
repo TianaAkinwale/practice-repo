@@ -13,8 +13,8 @@ const author = {
 }
 const role = 'Software Engineer, Nigeria'
 const skills = ['HTML', 'CSS', 'JS', 'React', 'Python', 'Git', 'VSCode', 'Github']
-const skillTe = 'Skills'
-const skillsT = skills.map(skill => <p className='skills'>{skill}</p>)
+const skillText = 'Skills'
+const skillsMap = skills.map(skill => <p className='skills'>{skill}</p>)
 
 //Image component
 const TianaImage = () => {
@@ -28,19 +28,21 @@ const TianaImage = () => {
 //User Card component
 const DivUserCard = () => {
   return (
-    <div className='DivUserCard'><TianaImage />
+    <div className='DivUserCard'>
+      <TianaImage />
       <h3>{author.firstName} {author.lastName}</h3>
       <p>{role}</p>
-      <h3>{skillTe}</h3>
+      <h3>{skillText}</h3>
       <div className='skills flex'>
-          <p className="skills flex">{skillsT}</p>
+        <p className="skills flex">{skillsMap}</p>
       </div>
     </div>
   )
 }
 
 // Hexadecimal color generator component
-const hexaColor = () => {
+//random color functions for each box
+const hexaColor1 = () => {
   let str = '0123456789abcdef'
   let color = ''
   for (let i = 0; i < 6; i++) {
@@ -49,25 +51,94 @@ const hexaColor = () => {
   }
   return '#' + color
 }
-/*
-const pp = [hexaColor(), hexaColor(), hexaColor(), hexaColor(), hexaColor()]
-const t = pp.map(p => <p className='hexaPara'>{p}</p>)
-//const hexaPara = hexaColor()*/
-const hexaParaStyle = {
+
+const hexaColor2 = () => {
+  let str = '0123456789abcdef'
+  let color = ''
+  for (let i = 0; i < 6; i++) {
+    let index = Math.floor(Math.random() * str.length)
+    color += str[index]
+  }
+  return '#' + color
+}
+
+const hexaColor3 = () => {
+  let str = '0123456789abcdef'
+  let color = ''
+  for (let i = 0; i < 6; i++) {
+    let index = Math.floor(Math.random() * str.length)
+    color += str[index]
+  }
+  return '#' + color
+}
+
+const hexaColor4 = () => {
+  let str = '0123456789abcdef'
+  let color = ''
+  for (let i = 0; i < 6; i++) {
+    let index = Math.floor(Math.random() * str.length)
+    color += str[index]
+  }
+  return '#' + color
+}
+
+const hexaColor5 = () => {
+  let str = '0123456789abcdef'
+  let color = ''
+  for (let i = 0; i < 6; i++) {
+    let index = Math.floor(Math.random() * str.length)
+    color += str[index]
+  }
+  return '#' + color
+}
+
+//col0r style
+const hexaParaStyle1 = {
   padding: '10px 20px',
-  background: hexaColor(),
+  background: hexaColor1(),
   border: 'none',
   borderRadius: 5,
 }
+
+const hexaParaStyle2 = {
+  padding: '10px 20px',
+  background: hexaColor1(),
+  border: 'none',
+  borderRadius: 5,
+}
+
+const hexaParaStyle3 = {
+  padding: '10px 20px',
+  background: hexaColor1(),
+  border: 'none',
+  borderRadius: 5,
+}
+
+const hexaParaStyle4 = {
+  padding: '10px 20px',
+  background: hexaColor1(),
+  border: 'none',
+  borderRadius: 5,
+}
+
+const hexaParaStyle5 = {
+  padding: '10px 20px',
+  background: hexaColor1(),
+  border: 'none',
+  borderRadius: 5,
+}
+
 const hexabtn = 'Click Me'
+
+//hexcolor main component
 const DivHexaColor = () => {
   return (
     <div className='DivHexaColor'>
-      <p className='hexaPara' style={hexaParaStyle}>{hexaColor()}</p>
-      <p className='hexaPara' style={hexaParaStyle}>{hexaColor()}</p>
-      <p className='hexaPara' style={hexaParaStyle}>{hexaColor()}</p>
-      <p className='hexaPara' style={hexaParaStyle}>{hexaColor()}</p>
-      <p className='hexaPara' style={hexaParaStyle}>{hexaColor()}</p>
+      <p className='hexaPara' style={hexaParaStyle1}>{hexaColor1()}</p>
+      <p className='hexaPara' style={hexaParaStyle2}>{hexaColor2()}</p>
+      <p className='hexaPara' style={hexaParaStyle3}>{hexaColor3()}</p>
+      <p className='hexaPara' style={hexaParaStyle4}>{hexaColor4()}</p>
+      <p className='hexaPara' style={hexaParaStyle5}>{hexaColor5()}</p>
       <button id='hexabtn'>{hexabtn}</button>
     </div>
   )
@@ -101,6 +172,7 @@ const main = (
     </main>
 )
 
+//main's component
 const Main = () => {
   return main
 }

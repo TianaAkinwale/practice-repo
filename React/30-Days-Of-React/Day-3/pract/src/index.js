@@ -52,6 +52,18 @@ const main = (
 
 const copyRight = 'Copyright 2020'
 
+/*component structure
+const FunComp () => {
+    return (
+
+    )
+}
+
+element structure
+const element = (
+
+)*/
+
 // JSX element, footer
 const footer = (
     <footer>
