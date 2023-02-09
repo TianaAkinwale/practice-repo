@@ -7,7 +7,7 @@ import TianaImage from './images/slack-dp.jpeg'
 //Image component
 const TiaImg = () => {
   return (
-    <div >
+    <div>
       <img src={TianaImage} alt='Tiana Akinwale' id="usercardimg"/>
     </div>
     )

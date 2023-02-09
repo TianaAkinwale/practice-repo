@@ -1,7 +1,9 @@
 /*1. Read the countries API using fetch and print the name of country, 
 capital, languages, population and area.*/
 const countriesAPI = 'https://restcountries.com/v2/all'
-/*const fetchData = async () => {
+/*
+async function fetchData() {}    or
+const fetchData = async () => {
     try {
       const response = await fetch(countriesAPI)
       const countries = await response.json()

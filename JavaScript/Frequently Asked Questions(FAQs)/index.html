@@ -11,6 +11,18 @@
     <h1>Type in the box</h1>
     <textarea name="text" id="text" cols="30" rows="3"></textarea><br>
     <button>Calculate Word length</button>
-    <script src="script.js"></script>
+
+    <script src="script.js">
+        const student = {
+            firstName : 'Tiana',
+            lastName : 'Akinwale',
+            age : 19,
+            skills: ['HTML', 'CSS', 'JavaScript', 'C', 'Python'],
+            country : 'Nigeria'
+        }
+
+       localStorage.setItem("student", "Tiana")
+       console.log(localStorage)
+    </script>
 </body>
 </html>

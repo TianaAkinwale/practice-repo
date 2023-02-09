@@ -8,6 +8,6 @@ const student = {
     skills: ['HTML', 'CSS', 'JavaScript', 'C', 'Python'],
     country : 'Nigeria'
 }
-const studentJSON = JSON.stringify(student, undefined, 4)
-const ls = localStorage.setItem('student', studentJSON)
-console.log(ls)
+//const studentJSON = JSON.stringify(student, undefined, 4)
+localStorage.setItem(firstName, 'Tiana')
+console.log(localStorage)

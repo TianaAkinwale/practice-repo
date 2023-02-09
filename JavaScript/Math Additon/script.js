@@ -1,3 +1,5 @@
+
+
 //declaring variables and getting elements by their html id attribute value 
 //and assigning them to variables
 let num1 = document.getElementById('num1');
@@ -151,3 +153,24 @@ function mulNums(num1, num2) {
     let result = num1 * num2;
     return result;
 }
+
+
+i will never fail another exam.
+-it is possible to move from glory to glory without breaks
+-those who say i won't reach my goal will come and bow down to me
++1those who feel destiny hasn't been kind to them, 
+(rev 7:4-8) it is the end that matters.
++i will inspire you. job 32:8
+I will ask to pay for the congress and refer to the new wave of glory message and say
+God gave me a new inspiration.
+*i will never again be referred to as an ex-champion. i will be a reigning champ
+gen 48:8-20
++2 Esau Gen 32:6-7
+a new wave of glory in the spiritual, eg peter
+against all odds, irrespective of the enemies against me, i will excel
+
+refuse to annoy God. gen 39:1-9
+
+1. praise God for the convention
+2. Father, please restore my withered hand
+3.
