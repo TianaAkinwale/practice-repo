@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "React/30-Days-Of-React/Day-6/map-list-keys",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"label": "npm: start - React/30-Days-Of-React/Day-6/map-list-keys",
+			"detail": "react-scripts start"
+		}
+	]
+}
