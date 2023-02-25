@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
-import UserCard from './main/usercard.js'
-import HexaColors from './main/hexacolors.js'
-import SignUp from './main/signup.js'
+import UserCard from './usercard.js'
+import HexaColors from './hexacolors.js'
+import SignUp from './signup.js'
+import Counter from './counter.js'
 
 class App extends Component {
     render() {
       //for array as i don't know how to put it in the object in the app component yet.
     const skills = ['HTML', 'CSS', 'JS', 'React', 'Python', 'Git', 'VSCode', 'Github']
-    const skillsMap = skills.map(skill => <p className='skills'>{skill}</p>)
+    const skillsMap = skills.map((skill) => <p /* key={skill} */ className='skills'>{skill}</p>)
   
     //other elements put in object form
     const userCardElements = {
@@ -116,7 +117,9 @@ class App extends Component {
   
     return (
       <div>
+        <Counter />
         <UserCard 
+        key={skills}
         skills={skills}
         skillsMap={skillsMap}
         userCardElements={userCardElements}
@@ -140,6 +143,9 @@ class App extends Component {
     )
     }
   }
+  
+  export default App
+
   // const App = () => {
   //   //for array as i don't know how to put it in the object in the app component yet.
   //   const skills = ['HTML', 'CSS', 'JS', 'React', 'Python', 'Git', 'VSCode', 'Github']
@@ -274,6 +280,4 @@ class App extends Component {
   //       />
   //     </div>
   //   )
-  // }
-
-  export default App
+  // }  
