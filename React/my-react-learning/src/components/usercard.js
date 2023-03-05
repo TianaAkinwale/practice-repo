@@ -50,7 +50,9 @@ class UserCard extends Component {
         <p>{role}</p>
         <h3>{skillsHeading}</h3>
         <div className="skills flex">
-          <p className="skills flex">{this.props.skillsMap}</p>
+          <div className="skills flex">
+            {this.props.skillsMap}
+          </div>
         </div>
         <p>{dateJoined}</p>
       </div>

@@ -6,6 +6,14 @@ body {
   width: 150px;
   border-radius: 100px;
 }
+.DivNumberGene {
+  background-color: rgb(144, 193, 248);
+  margin: 26px;
+  padding-left: 26px;
+  padding-top: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgb(1, 16, 34);
+}
 .DivUserCard {
   background-color: rgb(144, 193, 248);
   margin: 26px;

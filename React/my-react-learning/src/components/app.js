@@ -3,12 +3,32 @@ import UserCard from './usercard.js'
 import HexaColors from './hexacolors.js'
 import SignUp from './signup.js'
 import Counter from './counter.js'
+import NumberGene from './NumberGene.js'
 
 class App extends Component {
     render() {
-      //for array as i don't know how to put it in the object in the app component yet.
+      //number generator prop
+    const nums = [
+      1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,
+      17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32
+    ]
+    const numsMap = nums.map((num) => (
+      <p key={num} className='skills'>{num}</p>
+/* numFunc i'll call function here */
+      ))
+    
+/* style = */
+
+    /* numFunc = () => {
+      if (nums[index] / 2 === 0) {
+        /* style stuff will be here */
+      /*} else {
+        
+      }
+    } */
+    //for array as i don't know how to put it in the object in the app component yet.
     const skills = ['HTML', 'CSS', 'JS', 'React', 'Python', 'Git', 'VSCode', 'Github']
-    const skillsMap = skills.map((skill) => <p /* key={skill} */ className='skills'>{skill}</p>)
+    const skillsMap = skills.map((skill) => <p key={skill} className='skills'>{skill}</p>)
   
     //other elements put in object form
     const userCardElements = {
@@ -117,10 +137,10 @@ class App extends Component {
   
     return (
       <div>
-        <Counter />
+        <NumberGene 
+        numsMap={numsMap}
+        />
         <UserCard 
-        key={skills}
-        skills={skills}
         skillsMap={skillsMap}
         userCardElements={userCardElements}
         />
@@ -139,6 +159,7 @@ class App extends Component {
         <SignUp 
         signUpElements={signUpElements}
         />
+        <Counter />
       </div>
     )
     }
