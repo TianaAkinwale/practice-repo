@@ -55,8 +55,8 @@ class NavBar extends Component {
                 </button> */}
             </div>
             <ul>
-                <li className="animations"><a href="./HomeComp" className="link">{home}</a></li>
-                <li className="animations"><a href="./AbotComp" className="link">{about}</a></li>{/* will include download cv */}
+                <li className="animations"><a href="./HomeComp.js" className="link">{home}</a></li>
+                <li className="animations"><a href="./AboutComp.js" /*href not working */className="link">{about}</a></li>{/* will include download cv */}
                 <li className="animations"><a href="Reg.html" className="link">{skills}</a></li>
                 <li className="animations"><a href="Login.html" className="link">{services}</a></li>
                 <li className="animations"><a href="Contact.html" className="link">{portfolio}</a></li>

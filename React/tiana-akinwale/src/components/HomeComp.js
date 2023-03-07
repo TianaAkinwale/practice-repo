@@ -9,17 +9,28 @@ class HomeComp extends Component {
       author: {firstName, lastName},
       role,
       brief,
-      hire
+      hire,
+      connect,
+      githubLink,
+      linkedInLink,
+      twitterLink
     } = homeCompElements
     return (
-      <div className="HomeComp">
-        <TiaImage />
-        <h3>{hello}</h3>
-        <h3>{firstName} {lastName}</h3>
-        <h4>{role}</h4>
-        <p>{brief}</p>
-        <button>{hire}</button>
-      </div>
+      <section>
+        <div className="HomeComp">
+          <TiaImage />
+          <h3>{hello}</h3>
+          <h3>{firstName} {lastName}</h3>
+          <h4>{role}</h4>
+          <p>{brief}</p>
+          <button>{hire}{/* should go to contact */}</button>
+          <p>{connect} 
+            <a href={githubLink}>Github </a>{/* put in logo */} 
+            <a href={linkedInLink}>LinkedIn </a>  
+            <a href={twitterLink}>Twitter </a> 
+          </p>
+        </div>
+      </section>
     )
   }
 }
