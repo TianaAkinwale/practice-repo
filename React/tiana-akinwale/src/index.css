@@ -13,10 +13,10 @@ img {
   height: 100vh; /* set the height of the section to the height of the viewport */
 }
 section {
-  background-color: rgb(49, 49, 170);
+  background-color: rgb(20, 128, 56);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh; 
+  height: 140vh; 
 }
 .sidebar {
   display: grid;

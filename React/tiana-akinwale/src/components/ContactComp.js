@@ -1,13 +1,12 @@
-//Sign up component
 import React, { Component } from 'react'
 
-class SignUp extends Component {
-    render() {
-    const signUpElements = this.props.signUpElements
-    const {subscribe, signUp, signupbtn} = signUpElements
-    
+class ContactComp extends Component {
+  render() {
+    const contactCompElements = this.props.contactCompElements
+    const {subscribe, signUp, signupbtn} = contactCompElements
     return (
-      <div className='DivSignUp'>
+      <section>
+        <div>
         <h1 className="subs">{subscribe}</h1>
         <p className="subs">{signUp}</p>
         <form>
@@ -17,8 +16,9 @@ class SignUp extends Component {
           <button id='signupbtn'>{signupbtn}</button>
         </form> 
       </div>
+      </section>
     )
   }
-    }
-  
-  export default SignUp
+}
+
+export default ContactComp

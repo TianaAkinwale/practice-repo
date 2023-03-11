@@ -6,14 +6,6 @@ body {
   width: 150px;
   border-radius: 100px;
 }
-.DivNumberGene {
-  background-color: rgb(144, 193, 248);
-  margin: 26px;
-  padding-left: 26px;
-  padding-top: 25px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgb(1, 16, 34);
-}
 .DivUserCard {
   background-color: rgb(144, 193, 248);
   margin: 26px;
@@ -58,6 +50,29 @@ body {
   margin: 16px;
   color: rgb(255, 255, 255);
   cursor: pointer;
+}
+.DivNumberGene {
+  background-color: rgb(144, 193, 248);
+  margin: 26px;
+  padding-left: 26px;
+  padding-top: 25px;
+  padding-bottom: 250px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgb(1, 16, 34);
+  font-size: 30px;
+  text-align: center;
+}
+.numGene {
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  padding-left: 5px;
+  width: 65px;
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  margin-top: 0;
+  text-align:center
 }
 .DivSignUp {
   background-color: rgb(144, 193, 248);

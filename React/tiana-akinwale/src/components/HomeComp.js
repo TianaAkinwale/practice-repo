@@ -5,7 +5,7 @@ class HomeComp extends Component {
   render() {
     const homeCompElements = this.props.homeCompElements
     const {
-      hello,
+      greeting,
       author: {firstName, lastName},
       role,
       brief,
@@ -19,7 +19,7 @@ class HomeComp extends Component {
       <section>
         <div className="HomeComp">
           <TiaImage />
-          <h3>{hello}</h3>
+          <h3>{greeting}</h3>
           <h3>{firstName} {lastName}</h3>
           <h4>{role}</h4>
           <p>{brief}</p>

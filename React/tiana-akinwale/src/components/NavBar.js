@@ -36,11 +36,12 @@ class NavBar extends Component {
         about,
         skills,
         services,
-        portfolio,
+        projects,
         contact
       } = navBarElements
     return (
       <div>
+        {/* dark mode/// */}
         <button className="sidebar-toggle" onClick={this.openSideBar}>
             <i className="fas fa-bars">{openSB}</i>
         </button>
@@ -57,9 +58,9 @@ class NavBar extends Component {
             <ul>
                 <li className="animations"><a href="./HomeComp.js" className="link">{home}</a></li>
                 <li className="animations"><a href="./AboutComp.js" /*href not working */className="link">{about}</a></li>{/* will include download cv */}
-                <li className="animations"><a href="Reg.html" className="link">{skills}</a></li>
                 <li className="animations"><a href="Login.html" className="link">{services}</a></li>
-                <li className="animations"><a href="Contact.html" className="link">{portfolio}</a></li>
+                <li className="animations"><a href="Reg.html" className="link">{skills}</a></li>
+                <li className="animations"><a href="Contact.html" className="link">{projects}</a></li>
                 <li className="animations"><a href="Contact.html" className="link">{contact}</a></li>
             </ul>
         </aside>

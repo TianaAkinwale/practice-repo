@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import HomeComp from './HomeComp'
 import AboutComp from './AboutComp'
 import NavBar from './NavBar'
+import ServicesComp from './ServicesComp';
+import ProjectsComp from './ProjectsComp';
+import SkillsComp from './SkillsComp';
+import ContactComp from './ContactComp';
 
 class App extends Component {
   render() {
@@ -11,11 +15,12 @@ class App extends Component {
       about: 'About',
       skills: 'Skills',
       services: 'Services',
-      portfolio: 'Portfolio',
+      projects: 'Projects',
       contact: 'Contact'
+      /* add dark mode */
     }
     const homeCompElements = {
-      hello: "Hello I'm",
+      greeting: "Hello I'm",
       author: {
         firstName: 'IYANUOLUWA',
         lastName: 'AKINWALE'
@@ -30,7 +35,7 @@ class App extends Component {
       twitterLink: 'https://twitter.com/tianaa-akinwale'
     }
     const aboutCompElements = {
-      about: 'About Me',
+      heading: 'About Me',
       about1: `Est diam venenatis arcu lacus ad. Duis quis eros. Cursus et rutrum eleifend sollicitudin
        lacinia justo id turpis. Nec convallis integer. Odio eget duis. Nulla aenean et. Blandit varius
         sollicitudin. Pellentesque leo primis neque urna magnis. Elit ut sollicitudin. Et est a nam dolores
@@ -40,6 +45,64 @@ class App extends Component {
        sollicitudin...`,
       download: 'Download CV'  
     }
+    const servicesCompElements = {
+      heading: 'My Services',
+      /* heading2: 'What I provide my clients', */
+      services: {
+        service1: 'Consultation',
+        service2: 'FrontEnd Development',
+        service3: 'oiuytfvbnmgfghjk',
+        service4: 'kjhj,jhghyujkjhghjk'
+      },
+      service1Abt: `Lorem ipsum dolor sit aconsect dipisicing elit, 
+      sed do eiusmod to incididunt uabore etdolore magna 
+      aliqua.`,
+      service2Abt: `Lorem ipsum dolor sit aconsect dipisicing elit, 
+      sed do eiusmod to incididunt uabore etdolore magna 
+      aliqua.`,
+      service3Abt: `Lorem ipsum dolor sit aconsect dipisicing elit, 
+      sed do eiusmod to incididunt uabore etdolore magna 
+      aliqua.`,
+      service4Abt: `Lorem ipsum dolor sit aconsect dipisicing elit, 
+      sed do eiusmod to incididunt uabore etdolore magna 
+      aliqua.`
+    }
+    const projectsCompElements = {
+      heading: 'My Featured Projects',
+      projects: {
+        project1Name: 'Mini Math Game',
+        project2Name: 'Count Down Timer',
+        project3Name: 'My Portfolio',
+        project4Name: 'Frontend io project',
+        project5Name: 'Count Down Timer',
+        project6Name: 'My Portfolio',
+      }
+    }
+    const reactSkills = ['HTML', 'CSS', 'React.js',]
+    const reactSkillsMap = reactSkills.map((skill) => 
+    <p key={skill}>{skill}</p>)
+
+    const jsSkills = ['HTML', 'CSS', 'JavaScript',]
+    const jsSkillsMap = jsSkills.map((skill) => 
+    <p key={skill}>{skill}</p>)
+
+    const hcSkills = ['HTML', 'CSS']
+    const cssSkillsMap = hcSkills.map((skill) => 
+    <p key={skill}>{skill}</p>)
+
+    //slkils props
+    const heading = 'Some Tools I use'
+    const skills = ['HTML', 'CSS', 'JavaScript', 'React.js', 'Git', 'Github']
+    const skillsMap = skills.map((skill) => 
+    <p key={skill}>{skill}</p>)
+
+    //contact props
+    const contactCompElements = {
+      subscribe: 'SUBSCRIBE',
+      signUp: 'Sign up with your email address to receive news and updates',
+      signupbtn: 'Subscribe'
+    }
+
     return (
       <div>
         <NavBar 
@@ -50,6 +113,22 @@ class App extends Component {
         />
         <AboutComp 
         aboutCompElements={aboutCompElements}
+        />
+        <ServicesComp 
+        servicesCompElements={servicesCompElements}
+        />
+        <SkillsComp 
+        heading={heading}
+        skillsMap={skillsMap}
+        />
+        <ProjectsComp 
+        projectsCompElements={projectsCompElements}
+        reactSkillsMap={reactSkillsMap}
+        jsSkillsMap={jsSkillsMap}
+        cssSkillsMap={cssSkillsMap}
+        />
+        <ContactComp 
+        contactCompElements={contactCompElements}
         />
       </div>
     )
