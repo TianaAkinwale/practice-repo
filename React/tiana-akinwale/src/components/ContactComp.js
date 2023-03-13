@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+/* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'; */
 
 class ContactComp extends Component {
   render() {
@@ -24,8 +24,8 @@ class ContactComp extends Component {
           <p className="subs">{subHeading2}</p>
           <div className='contactIcons'>
             <a href={phone} title='Text me on Whatsapp' target='_blank' rel="noreferrer">
-            <FontAwesomeIcon icon={faWhatsapp} />
-            </a>
+{/*             <FontAwesomeIcon icon={faWhatsapp} />
+ */}            </a>
             <a href={email} title='Send me an Email' target='_blank' rel="noreferrer">
               <span className="material-symbols-outlined">mail</span>
           </a>  
