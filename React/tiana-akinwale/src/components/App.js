@@ -26,8 +26,6 @@ class App extends Component {
         lastName: 'AKINWALE'
       },
       role: 'Web Developer',
-      brief: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed
-      diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam`,
       hire: 'Hire Me',
       connect: 'Connect with me',
       githubLink: 'https://github.com/TianaAkinwale',
@@ -98,13 +96,19 @@ class App extends Component {
 
     //contact props
     const contactCompElements = {
-      subscribe: 'SUBSCRIBE',
-      signUp: 'Sign up with your email address to receive news and updates',
-      signupbtn: 'Subscribe'
+      heading: 'Contact Me',
+      /* subHeading: 'Do you have an idea for a project?', */
+      subHeading2: 'Send me a message',
+      email: 'tianaakinwale@gmail.com',
+      phone: 'https://wa.me/c/2347054208628',
+      button: 'Send Message'
     }
 
     return (
       <div>
+        <ContactComp 
+        contactCompElements={contactCompElements}
+        />
         <NavBar 
         navBarElements={navBarElements}
         />
@@ -126,7 +130,7 @@ class App extends Component {
         reactSkillsMap={reactSkillsMap}
         jsSkillsMap={jsSkillsMap}
         cssSkillsMap={cssSkillsMap}
-        />
+        />        
         <ContactComp 
         contactCompElements={contactCompElements}
         />

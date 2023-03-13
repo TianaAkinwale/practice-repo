@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import CartIcon from './CartIcon'
-
+/* import CartIcon from './CartIcon'
+ */
 class NavBar extends Component {
    constructor() {
     super()
@@ -50,8 +50,8 @@ class NavBar extends Component {
         </button> */}
         <aside className={this.state.className}>
             <div className="sidebar-header">
-                <CartIcon />
-                {/* <button className="closeBtn">
+{/*                 <CartIcon />
+ */}                {/* <button className="closeBtn">
                     <i className="fas fa-times">{closeSB}</i>
                 </button> */}
             </div>

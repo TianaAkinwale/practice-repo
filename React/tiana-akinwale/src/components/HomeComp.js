@@ -8,7 +8,6 @@ class HomeComp extends Component {
       greeting,
       author: {firstName, lastName},
       role,
-      brief,
       hire,
       connect,
       githubLink,
@@ -22,7 +21,6 @@ class HomeComp extends Component {
           <h3>{greeting}</h3>
           <h3>{firstName} {lastName}</h3>
           <h4>{role}</h4>
-          <p>{brief}</p>
           <button>{hire}{/* should go to contact */}</button>
           <p>{connect} 
             <a href={githubLink}>Github </a>{/* put in logo */} 
