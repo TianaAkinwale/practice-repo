@@ -13,7 +13,7 @@ class ContactComp extends Component {
       phone,
       button
     } = contactCompElements
-    
+
     return (
       <div>
         <section id="contactCompSec">
@@ -25,7 +25,8 @@ class ContactComp extends Component {
           <div className='contactIcons'>
             <a href={phone} title='Text me on Whatsapp' target='_blank' rel="noreferrer">
 {/*             <FontAwesomeIcon icon={faWhatsapp} />
- */}            </a>
+ */} <i class="fas fa-user"></i>          
+  </a>
             <a href={email} title='Send me an Email' target='_blank' rel="noreferrer">
               <span className="material-symbols-outlined">mail</span>
           </a>  
@@ -33,8 +34,14 @@ class ContactComp extends Component {
         </div>
         <div class='contactFormDiv'>
           <form>
-            <input type="text" placeholder="Name" required/><br />
-            <input type="email" placeholder="Email" required/><br />
+            <input 
+              type="text" 
+              placeholder="Name" 
+              required
+            /><br />
+            <input 
+            type="email" 
+            placeholder="Email" required/><br />
             <input type="text" placeholder="Subject" required/><br />
             <textarea placeholder="Message" /* name="message" */ required rows="5" cols="90">
             </textarea><br />
