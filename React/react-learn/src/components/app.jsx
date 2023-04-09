@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import UserCard from './usercard.js'
-import HexaColors from './hexacolors.js'
-import SignUp from './signup.js'
-import Counter from './counter.js'
-import NumberGene from './NumberGene.js'
+import UserCard from './usercard.jsx'
+import HexaColors from './hexacolors.jsx'
+import SignUp from './signup.jsx'
+import Counter from './counter.jsx'
+import NumberGene from './NumberGene.jsx'
 
 class App extends Component {
     render() {

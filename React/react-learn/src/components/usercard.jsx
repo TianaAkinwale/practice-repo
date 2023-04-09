@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import TiaImg from './image.js'
+import TiaImg from './image.jsx'
 
 //usercard component
 class UserCard extends Component {
