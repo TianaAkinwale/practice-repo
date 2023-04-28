@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TiaImg from './image.jsx';
 
 // UserCard component
-const UserCard = ({ userCardElements, skillsMap }) => {
+const UserCard = ({ userCardElements, skillsMap }/* or props */) => {
   const [noun, setNoun] = useState('Christianah');
 
   const changeMess = () => {
