@@ -1,24 +1,39 @@
 //Sign up component
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 
-class SignUp extends Component {
-    render() {
-    const signUpElements = this.props.signUpElements
-    const {subscribe, signUp, signupbtn} = signUpElements
-    
-    return (
-      <div className='DivSignUp'>
-        <h1 className="subs">{subscribe}</h1>
-        <p className="subs">{signUp}</p>
-        <form>
-          <input type="text" placeholder="First Name" required/>
-          <input type="text" placeholder="Last Name"/>
-          <input type="email" placeholder="Email" required/><br/>
-          <button id='signupbtn'>{signupbtn}</button>
-        </form> 
-      </div>
-    )
+const SignUp = ({ signUpElements }) => {
+  const { subscribe, signUp, signupbtn } = signUpElements
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    mail: '',
+  })
+
+  const fNameHandler = (e) => {
+    setFormData(prevState => ({
+      ...prevState,
+      firstName: e.target.value,
+    }))
   }
-    }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(formData)
+    // Do something with the form data
+  }
   
-  export default SignUp
+  return (
+    <div className='DivSignUp'>
+      <h1 className="subs">{subscribe}</h1>
+      <p className="subs">{signUp}</p>
+      <form>
+        <input type="text" onChange={fNameHandler}placeholder="First Name" required/>
+        <input type="text" placeholder="Last Name"/>
+        <input type="email" placeholder="Email" required/><br/>
+        <button id='signupbtn'>{signupbtn}</button>
+      </form> 
+    </div>
+  )
+}
+
+export default SignUp

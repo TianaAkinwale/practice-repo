@@ -1,66 +1,39 @@
-import React, { Component } from 'react'
-import TiaImg from './image.jsx'
+import React, { useState } from 'react';
+import TiaImg from './image.jsx';
 
-//usercard component
-class UserCard extends Component {
-  constructor() {
-    super()
+// UserCard component
+const UserCard = ({ userCardElements, skillsMap }) => {
+  const [noun, setNoun] = useState('Christianah');
 
-    this.state = {
-      noun: "Christianah"
-    }
+  const changeMess = () => {
+    setNoun('Kris');
+  };
 
-    this.changeMess = this.changeMess.bind(this)
-  }
+  const {
+    author: { firstname, lastname },
+    role,
+    skillsHeading,
+    dateJoined,
+  } = userCardElements;
 
-  changeMess() {
-    this.setState({
-      noun: 'Kris'
-    })
-  }
-
-    render() {
-      const userCardElements = this.props.userCardElements
-    /*const {author, role, skillsHeading, dateJoined} = userCardElements
-    const {firstname, lastname} = author*/
-  
-    //2nd destructuring method- single line method
-    const {
-      author: {firstname, lastname},
-      role, 
-      skillsHeading, 
-      dateJoined
-    } = userCardElements
-    
-    //3rd destructuring method- bracket method
-    /*const UserCard = ({
-      userCardElements: {
-        author: {firstname, lastname},
-        role, 
-        skillsHeading, 
-        dateJoined
-      }
-    }) => { return (...)}*/
-  /*state*/
-    return (
-      <div className="DivUserCard">
-        <TiaImg />
-        <h3>{firstname} {this.state.noun} {lastname}</h3>
-        <button onClick={this.changeMess}>Click me to change name</button>
-        <p>{role}</p>
-        <h3>{skillsHeading}</h3>
-        <div className="skills flex">
-          <div className="skills flex">
-            {this.props.skillsMap}
-          </div>
-        </div>
-        <p>{dateJoined}</p>
+  return (
+    <div className="DivUserCard">
+      <TiaImg />
+      <h3>
+        {firstname} {noun} {lastname}
+      </h3>
+      <button onClick={changeMess}>Click me to change name</button>
+      <p>{role}</p>
+      <h3>{skillsHeading}</h3>
+      <div className="skills flex">
+        <div className="skills flex">{skillsMap}</div>
       </div>
-    )
-   }
-  }
- 
-  export default UserCard
+      <p>{dateJoined}</p>
+    </div>
+  );
+};
+
+export default UserCard;
 
   /* event binding...
         handling events
