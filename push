@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#script to add, commit, and push
+
+#prompt to add commit message
+read -p "Enter your commit message: " commit_message
+
+#alt: echo "prompt"
+#read prompt
+
+#commands
+git add .
+git commit -m "$commit_message"
+git push
