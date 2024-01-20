@@ -1,0 +1,220 @@
+﻿Diagnose log at 2023-06-12T10:27:42Z
+
+Executable: C:\Program Files\Git\mingw64\bin\git-credential-manager-core.exe
+Version: 2.0.696+4365b917da
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 19044)
+Reading environment variables... OK
+ Variables:
+HOMEPATH=\Users\Tiana
+DriverData=C:\Windows\System32\Drivers\DriverData
+COMPUTERNAME=TIANA
+MSYSTEM=MINGW64
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+OneDrive=C:\Users\Tiana\OneDrive
+ProgramFiles(x86)=C:\Program Files (x86)
+CONFIG_SITE=C:/Program Files/Git/etc/config.site
+LC_CTYPE=en_US.UTF-8
+USERDOMAIN=TIANA
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+ORIGINAL_TEMP=C:/Users/Tiana/AppData/Local/Temp
+MINGW_PREFIX=C:/Program Files/Git/mingw64
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+ACLOCAL_PATH=C:\Program Files\Git\mingw64\share\aclocal;C:\Program Files\Git\usr\share\aclocal
+TEMP=C:\Users\Tiana\AppData\Local\Temp
+LOCALAPPDATA=C:\Users\Tiana\AppData\Local
+MANPATH=C:\Program Files\Git\mingw64\local\man;C:\Program Files\Git\mingw64\share\man;C:\Program Files\Git\usr\local\man;C:\Program Files\Git\usr\share\man;C:\Program Files\Git\usr\man;C:\Program Files\Git\share\man
+TERM=xterm
+PROCESSOR_IDENTIFIER=AMD64 Family 21 Model 112 Stepping 0, AuthenticAMD
+MSYSTEM_CARCH=x86_64
+PROGRAMFILES=C:\Program Files (x86)
+ProgramData=C:\ProgramData
+TERM_PROGRAM_VERSION=3.6.1
+ORIGINAL_TMP=C:/Users/Tiana/AppData/Local/Temp
+PROCESSOR_REVISION=7000
+SYSTEMROOT=C:\Windows
+TERM_PROGRAM=mintty
+PROCESSOR_LEVEL=21
+NUMBER_OF_PROCESSORS=2
+SSH_ASKPASS=C:/Program Files/Git/mingw64/bin/git-askpass.exe
+SHLVL=1
+APPDATA=C:\Users\Tiana\AppData\Roaming
+SYSTEMDRIVE=C:
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+HOSTNAME=Tiana
+PKG_CONFIG_PATH=C:\Program Files\Git\mingw64\lib\pkgconfig;C:\Program Files\Git\mingw64\share\pkgconfig
+MSYSTEM_CHOST=x86_64-w64-mingw32
+WINDIR=C:\Windows
+PLINK_PROTOCOL=ssh
+INFOPATH=C:\Program Files\Git\usr\local\info;C:\Program Files\Git\usr\share\info;C:\Program Files\Git\usr\info;C:\Program Files\Git\share\info
+ProgramW6432=C:\Program Files
+PATH=C:/Program Files/Git/mingw64/libexec/git-core;C:\Users\Tiana\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Tiana\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\mingw64;C:\mingw64\bin;C:\Program Files\nodejs;C:\Program Files\PuTTY;C:\HashiCorp\Vagrant\bin;C:\Users\Tiana\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\Tiana\AppData\Local\Programs\Python\Python310;C:\Users\Tiana\AppData\Local\Microsoft\WindowsApps;C:\mingw-w64-v10.0.0\bin;C:\Users\Tiana\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Tiana\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+MINGW_CHOST=x86_64-w64-mingw32
+VBOX_HWVIRTEX_IGNORE_SVM_IN_USE=1
+TMPDIR=C:\Users\Tiana\AppData\Local\Temp
+TMP=C:\Users\Tiana\AppData\Local\Temp
+SHELL=C:\Program Files\Git\usr\bin\bash.exe
+HOME=C:\Users\Tiana
+COMSPEC=C:\Windows\system32\cmd.exe
+LOGONSERVER=\\TIANA
+USERPROFILE=C:\Users\Tiana
+DISPLAY=needs-to-be-defined
+COMMONPROGRAMFILES=C:\Program Files (x86)\Common Files
+_=C:/Program Files/Git/mingw64/bin/git
+USERDOMAIN_ROAMINGPROFILE=TIANA
+CommonProgramW6432=C:\Program Files\Common Files
+HOMEDRIVE=C:
+MSYSTEM_PREFIX=C:/Program Files/Git/mingw64
+OLDPWD=C:/Users/Tiana
+MINGW_PACKAGE_PREFIX=mingw-w64-x86_64
+SESSIONNAME=Console
+PWD=C:/Users/Tiana/practice-repo
+EXEPATH=C:\Program Files\Git
+USERNAME=Tiana
+PROCESSOR_ARCHITEW6432=AMD64
+ORIGINAL_PATH=C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Tiana\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\mingw64;C:\mingw64\bin;C:\Program Files\nodejs;C:\Program Files\PuTTY;C:\HashiCorp\Vagrant\bin;C:\Users\Tiana\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\Tiana\AppData\Local\Programs\Python\Python310;C:\Users\Tiana\AppData\Local\Microsoft\WindowsApps;C:\mingw-w64-v10.0.0\bin;C:\Users\Tiana\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Tiana\AppData\Roaming\npm
+PROCESSOR_ARCHITECTURE=x86
+PS1=\[\033]0;$TITLEPREFIX:$PWD\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$ 
+OS=Windows_NT
+VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+OneDriveConsumer=C:\Users\Tiana\OneDrive
+ALLUSERSPROFILE=C:\ProgramData
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\Tiana\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\Tiana\AppData\Local\Temp\78a74883b2af0d837e3ed260'... OK
+Reading from temporary file 'C:\Users\Tiana\AppData\Local\Temp\78a74883b2af0d837e3ed260'... OK
+Deleting temporary file 'C:\Users\Tiana\AppData\Local\Temp\78a74883b2af0d837e3ed260'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\Tiana
+UserDataDirectoryPath: C:\Users\Tiana\.gcm
+GetCurrentDirectory(): C:\Users\Tiana\practice-repo
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking basic networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:61067/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+Testing with IHttpClientFactory created HTTP client...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:61069/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.36.1.windows.1'
+Locating current repository... OK
+Git repository at 'C:/Users/Tiana/practice-repo/.git'
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=openssl
+file:C:/Program Files/Git/etc/gitconfig	http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager-core
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/Tiana/.gitconfig	filter.lfs.required=true
+file:C:/Users/Tiana/.gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Users/Tiana/.gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Users/Tiana/.gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Users/Tiana/.gitconfig	user.name=TianaAkinwale
+file:C:/Users/Tiana/.gitconfig	user.email=tianorway@gmail.com
+file:C:/Users/Tiana/.gitconfig	credential.helper=store
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/TianaAkinwale/practice-repo.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.master.remote=origin
+file:.git/config	branch.master.merge=refs/heads/master
+file:.git/config	user.name=TianaAkinwale
+file:.git/config	user.email=tianorway@gmail.com
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker not supported.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\Tiana\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\Tiana\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+

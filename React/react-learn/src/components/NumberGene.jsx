@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class NumberGene extends Component {
-  render() {
+const NumberGene = () => {
     return (
       <div className='DivNumberGene'>
         <div className="numGene flex">
@@ -12,6 +11,5 @@ class NumberGene extends Component {
       </div>
     )
   }
-}
 
 export default NumberGene

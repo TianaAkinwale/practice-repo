@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class HexaColors extends Component {
-    render() {
+const HexaColors = () => {
       return (
         <div className="DivHexaColor">
           {this.props.hexMap}
@@ -9,7 +8,6 @@ class HexaColors extends Component {
         //add buttons to each for onclick
       )
     }
-  }
   
 export default HexaColors
 

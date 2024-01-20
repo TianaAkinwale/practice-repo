@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import TiaImg from './image.jsx';
+/* import TiaImg from './image.jsx';
+ */import TianaImage from '../images/slack-dp.jpeg'
 
 // UserCard component
 const UserCard = ({ userCardElements, skillsMap }/* or props */) => {
@@ -18,11 +19,13 @@ const UserCard = ({ userCardElements, skillsMap }/* or props */) => {
 
   return (
     <div className="DivUserCard">
-      <TiaImg />
+      <img src={TianaImage} alt='Tiana Akinwale' id="usercardimg"/>
       <h3>
         {firstname} {noun} {lastname}
       </h3>
       <button onClick={changeMess}>Click me to change name</button>
+      //put link to settings page
+      <button onClick={changeMess}>Click me to edit profile</button>
       <p>{role}</p>
       <h3>{skillsHeading}</h3>
       <div className="skills flex">

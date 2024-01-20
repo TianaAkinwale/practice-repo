@@ -3,7 +3,10 @@ import UserCard from './usercard.jsx'
 import HexaColors from './hexacolors.jsx'
 import SignUp from './signup.jsx'
 import Counter from './counter.jsx'
-import NumberGene from './NumberGene.jsx'
+/* import NumberGene from './NumberGene.jsx'
+ */import Settings from '../components smwa/Settings.jsx'
+ import Notifications from '../components smwa/Notifications.jsx'
+ import LandingPage from '../components smwa/LandingPage.jsx'
 
 const App = () => {
   //for array as i don't know how to put it in the object in the app component yet.
@@ -43,7 +46,7 @@ const App = () => {
   /* <button id="hexabtn" onClick={this.changeMess}>Click Me</button> */
 
   //number generator prop
-  const nums = []
+ /*  const nums = []
   for (let i = 1; i <= 32; i++) {
     nums.push(i)
   }
@@ -51,7 +54,7 @@ const App = () => {
     <p key={num} className='numGene' style={
       { backgroundColor: (num % 2 === 0) ? 'green' : (num % 3 === 0) ? 'yellow' : 'red' }
     }>{num}</p>
-  ))
+  )) */
 
   //sign up elements put in objects
   const signUpElements = {
@@ -59,9 +62,26 @@ const App = () => {
     signUp: 'Sign up with your email address to receive news and updates',
     signupbtn: 'Subscribe'
   }
+  
+  //Notification elements
+  const objects = {
+      userName1: 'Shade',
+      userName2: 'Bolu',
+      count: '66'
+    }
+
+  const notificationsElements = {
+    like: `${objects.userName1} and ${objects.count} others liked your post`, /* The text will be generated from the backend */
+    comment: `${objects.userName2} commented on your post`,
+    share: `${objects.userName1} shared your post`,
+    follow: `${objects.userName2} followed you`,
+    post: `${objects.userName1} made a new post`
+  }
 
   return (
     <div>
+      <LandingPage
+      />
       <UserCard
         skillsMap={skillsMap}
         userCardElements={userCardElements}
@@ -69,15 +89,18 @@ const App = () => {
       <HexaColors
         hexMap={hexMap}
       />
-      <NumberGene
+      {/* <NumberGene
         numsMap={numsMap}
-      />
+      /> */}
       <SignUp
         signUpElements={signUpElements}
+      />
+      <Settings />
+      <Notifications 
+        notificationsElements={notificationsElements}
       />
       <Counter />
     </div>
   )
 }
-
 export default App

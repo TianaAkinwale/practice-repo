@@ -1,0 +1,5 @@
+change class components to functions
+change css to tailwind css
+learn state
+
+npm install -D tailwindcss@latest postcss@latest autuprefixer@latest
