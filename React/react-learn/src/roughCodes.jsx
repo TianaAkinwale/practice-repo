@@ -68,3 +68,30 @@ can be used to update any property in the state object dynamically, while the
   const handleNameChange = (e) => {
     setName(e.target.value //or string);
   };*/
+
+  
+  /** @type {import('tailwindcss').Config} */
+/* export default {
+  content: [],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+postcss
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+} */
+
+
+/* @import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities'; */
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */

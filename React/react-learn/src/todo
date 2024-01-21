@@ -1,4 +1,4 @@
-change class components to functions - no need
+/* change class components to functions - no need
 change css to tailwind css
 learn state, methods, functions - done
 about deploying, behind scenes, how to deploy right -
@@ -9,4 +9,4 @@ learn hooks -
 add documentation
 
 
-npm install -D tailwindcss@latest postcss@latest autuprefixer@latest
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest */
