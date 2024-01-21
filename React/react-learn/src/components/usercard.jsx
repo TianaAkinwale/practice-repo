@@ -18,14 +18,16 @@ const UserCard = ({ userCardElements, skillsMap }/* or props */) => {
   } = userCardElements;
 
   return (
-    <div className="DivUserCard">
+    <div id="divUserCard">
       <img src={TianaImage} alt='Tiana Akinwale' id="usercardimg"/>
       <h3>
         {firstname} {noun} {lastname}
       </h3>
       <button onClick={changeMess}>Click me to change name</button>
+
       //put link to settings page
-      <button onClick={changeMess}>Click me to edit profile</button>
+      <button><a href="#settingsDiv">Click me to edit profile</a></button>
+
       <p>{role}</p>
       <h3>{skillsHeading}</h3>
       <div className="skills flex">

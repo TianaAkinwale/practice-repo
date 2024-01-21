@@ -1,5 +1,12 @@
-change class components to functions
+change class components to functions - no need
 change css to tailwind css
-learn state
+learn state, methods, functions - done
+about deploying, behind scenes, how to deploy right -
+debugging in vscode, chrome -
+rendering in the html file and the 2 redering methods...
+...and why i chose the one im using now -
+learn hooks - 
+add documentation
+
 
 npm install -D tailwindcss@latest postcss@latest autuprefixer@latest

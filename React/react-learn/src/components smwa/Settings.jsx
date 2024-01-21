@@ -4,7 +4,7 @@ import Footer from './Footer.jsx'
 
 const Settings = ({}) => {
       return (
-        <div className="settingsDiv">
+        <div id="settingsDiv">
             <h1 className="settingsHeader">Settings</h1>
             <div id="set1">
               <img src={ImgHolder} alt='Profile Picture' id="profilePic"/>
