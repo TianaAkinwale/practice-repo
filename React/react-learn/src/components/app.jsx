@@ -53,7 +53,7 @@ const App = () => {
     nums.push(i)
   }
   const numsMap = nums.map((num) => (
-    <p key={num} className='numGene' 
+    <p key={num} className='border-none rounded-[8px] w-[115px] h-[40px] mt-0 text-center' 
       style = {
         { backgroundColor: (num % 2 === 0) ? 'green' : (num % 3 === 0) ? 'purple' : 'orange' }
     }>

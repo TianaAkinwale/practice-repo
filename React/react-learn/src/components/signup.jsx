@@ -40,13 +40,16 @@ const SignUp = ({ signUpElements }) => {
   }
 
   return (
-    <div className='DivSignUp'>
-      <h1 className="subs">{subscribe}</h1>
-      <p className="subs">{signUp}</p>
+    <div className='bg-blue-700 text-center- m-[26px] pt-6px] pb-[20px] rounded-[12px] shadow-md'>
+      <h1 className=" ">{subscribe}</h1>
+      <p className=" ">{signUp}</p>
       <form onSubmit={handleSubmit}>
-        <input type="text" id="fName" onChange={fNameHandler} placeholder="First Name" /* required *//>
-        <input type="text" id="lName" onChange={lNameHandler} placeholder="Last Name"/>
-        <input type="email" id="mail" onChange={mailHandler} placeholder="Email" /* required *//><br/>
+        <input className='bg-blue-700 border-none rounded-[8px] px-[9px] py-0 m-[3px] mt-[30px] w-[140px]'
+          type="text" id="fName" onChange={fNameHandler} placeholder="First Name" /* required *//>
+        <input className='bg-blue-700 border-none rounded-[8px] px-[9px] py-0 m-[3px] mt-[30px] w-[140px]'
+          type="text" id="lName" onChange={lNameHandler} placeholder="Last Name"/>
+        <input className='bg-blue-700 border-none rounded-[8px] px-[9px] py-0 m-[3px] mt-[30px] w-[140px]'
+          type="email" id="mail" onChange={mailHandler} placeholder="Email" /* required *//><br/>
         <button id='signupbtn'>{signupbtn}</button>
       </form> 
     </div>
