@@ -8,5 +8,6 @@ rendering in the html file and the 2 redering methods...
 learn hooks - 
 add documentation
 
-
-npm install -D tailwindcss@latest postcss@latest autoprefixer@latest */
+add follow button to notifications page
+    /* find a way to make the name bold in notifications, gpt */
+find a way to avoid repeating styles in classeslike if padding right and left are same thing

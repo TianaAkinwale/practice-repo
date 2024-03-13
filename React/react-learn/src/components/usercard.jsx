@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 /* import TiaImg from './image.jsx';
  */import TianaImage from '../images/slack-dp.jpeg'
 
-// UserCard component
 const UserCard = ({ userCardElements, skillsMap }/* or props */) => {
   const [noun, setNoun] = useState('Christianah');
 
@@ -18,8 +17,9 @@ const UserCard = ({ userCardElements, skillsMap }/* or props */) => {
   } = userCardElements;
 
   return (
-    <div id="divUserCard">
-      <img src={TianaImage} alt='Tiana Akinwale' id="usercardimg"/>
+    <div className="bg-blue-700 m-[26px] px-[26px] py-[25px] rounded-[25px] shadow-md">
+      <img className="h-[180px] w-[150px] rounded-[100px]"
+        src={TianaImage} alt='Tiana Akinwale' />
       <h3>
         {firstname} {noun} {lastname}
       </h3>
@@ -30,10 +30,12 @@ const UserCard = ({ userCardElements, skillsMap }/* or props */) => {
 
       <p>{role}</p>
       <h3>{skillsHeading}</h3>
-      <div className="skills flex">
-        <div className="skills flex">{skillsMap}</div>
-      </div>
-      <p>{dateJoined}</p>
+        <div className=" ">
+          <div className="grid grid-cols-4 w-[100]">
+            {skillsMap}
+          </div>  
+        </div>
+      <p className='bg-yellow-700 rounded-[8px] px-[10px] py-[8px] text-center max-w-[50px] shadow-md'>{dateJoined}</p>
     </div>
   );
 };

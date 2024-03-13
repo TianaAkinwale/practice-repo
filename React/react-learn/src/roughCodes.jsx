@@ -79,13 +79,32 @@ can be used to update any property in the state object dynamically, while the
   plugins: [],
 }
 
+ tailwind.config.js
+module.exports = {
+ purge: ['./index.html', './src/**//*.jsx'],
+  theme: {
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+}
+
 postcss
 export default {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
   },
-} */
+} 
+
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}*/
 
 
 /* @import 'tailwindcss/base';

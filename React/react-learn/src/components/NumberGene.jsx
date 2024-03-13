@@ -1,13 +1,9 @@
-import React from 'react';
-
-const NumberGene = () => {
+const NumberGene = ({ numsMap }) => {
     return (
       <div className='DivNumberGene'>
-        <div className="numGene flex">
-          <div className="numGene flex">
-            {this.props.numsMap}
-          </div>
-        </div>
+        <div className="inner">
+          {numsMap}
+        </div>  
       </div>
     )
   }

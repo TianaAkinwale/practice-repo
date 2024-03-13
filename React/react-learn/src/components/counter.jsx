@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Counter = () => {
   const [count, setCount] = useState(0);
+  const [message, setMessage] = useState('');
 
   const increaseCount = () => {
     setCount(prevCount => prevCount + 15);
+    
   };
 
   const decreaseCount = () => {
@@ -14,7 +16,9 @@ const Counter = () => {
   return (
     <div>  
       <div>Count = {count}</div>
-      <button onClick={increaseCount}>Increment</button>
+      <button /*  onClick={countMessageHandler} */
+        onClick={increaseCount}>
+        Increment</button>
       <button onClick={decreaseCount}>Decrement</button>
     </div>  
   );

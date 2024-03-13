@@ -44,9 +44,9 @@ const SignUp = ({ signUpElements }) => {
       <h1 className="subs">{subscribe}</h1>
       <p className="subs">{signUp}</p>
       <form onSubmit={handleSubmit}>
-        <input type="text" onChange={fNameHandler} value={fNameHandler} placeholder="First Name" /* required *//>
-        <input type="text" onChange={lNameHandler} value={lNameHandler} placeholder="Last Name"/>
-        <input type="email" onChange={mailHandler} value={mailHandler} placeholder="Email" /* required *//><br/>
+        <input type="text" id="fName" onChange={fNameHandler} placeholder="First Name" /* required *//>
+        <input type="text" id="lName" onChange={lNameHandler} placeholder="Last Name"/>
+        <input type="email" id="mail" onChange={mailHandler} placeholder="Email" /* required *//><br/>
         <button id='signupbtn'>{signupbtn}</button>
       </form> 
     </div>
