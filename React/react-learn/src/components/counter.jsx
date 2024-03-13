@@ -6,7 +6,7 @@ const Counter = () => {
 
   const increaseCount = () => {
     setCount(prevCount => prevCount + 15);
-    
+    setMessage({value: 'you increased count?!'})
   };
 
   const decreaseCount = () => {
@@ -16,9 +16,8 @@ const Counter = () => {
   return (
     <div>  
       <div>Count = {count}</div>
-      <button /*  onClick={countMessageHandler} */
-        onClick={increaseCount}>
-        Increment</button>
+      <button onClick={increaseCount}>Increment</button>
+      <p onClick={increaseCount}>{message.value}</p>
       <button onClick={decreaseCount}>Decrement</button>
     </div>  
   );
