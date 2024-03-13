@@ -50,7 +50,7 @@ const SignUp = ({ signUpElements }) => {
           type="text" id="lName" onChange={lNameHandler} placeholder="Last Name"/>
         <input className='bg-blue-700 border-none rounded-[8px] px-[9px] py-0 m-[3px] mt-[30px] w-[140px]'
           type="email" id="mail" onChange={mailHandler} placeholder="Email" /* required *//><br/>
-        <button id='signupbtn'>{signupbtn}</button>
+        <button className='bg-red-700 border-none border-radius px-[8px] py-[85px] m-[16px] text-white cursor-pointer'>{signupbtn}</button>
       </form> 
     </div>
   )
