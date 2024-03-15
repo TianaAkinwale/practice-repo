@@ -1,6 +1,3 @@
-/*jaleyhelp_W8axFg6rTOjaleyhelp
-4R3rNChBZ4WnVnjaleyhelp
-9ycwTI0rZz9tjaleyhelp*/
 import REeact, { useState } from 'react'
 
 const Test = () => {
