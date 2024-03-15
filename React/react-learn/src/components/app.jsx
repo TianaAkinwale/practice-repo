@@ -6,14 +6,8 @@ import Test from './test'
 import NumberGene from './NumberGene'
 
 const App = () => {
-
-  //for array as i don't know how to put it in the object in the app component yet.
-  const skills = ['HTML', 'CSS', 'JS', 'React', 'Python', 'Git', 'VSCode', 'Github']
-  const skillsMap = skills.map((skill) => 
-    <p key={skill} className='bg-yellow-700 rounded-[8px] px-[10px] py-[8px] text-center max-w-[50px] mt-0 shadow-md'>
-      {skill}
-    </p>
-  )
+ /*  props in app is ony for props ill use universally.
+  move these to separate files */
 
   //other elements put in object form
   const userCardElements = {
@@ -53,7 +47,8 @@ const App = () => {
     nums.push(i)
   }
   const numsMap = nums.map((num) => (
-    <p key={num} className='border-none rounded-[8px] w-[115px] h-[40px] mt-0 text-center' 
+    <p key={num} 
+      className='rounded-[8px] w-[100px] h-[40px] my-2 text-center' 
       style = {
         { backgroundColor: (num % 2 === 0) ? 'green' : (num % 3 === 0) ? 'purple' : 'orange' }
     }>
@@ -71,8 +66,9 @@ const App = () => {
   return (
     <div>
       <Test />
+      <Counter />
       <UserCard
-        skillsMap={skillsMap}
+        /* skillsMap={skillsMap} */
         userCardElements={userCardElements}
       />
       <HexaColors

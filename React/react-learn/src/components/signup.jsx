@@ -40,17 +40,17 @@ const SignUp = ({ signUpElements }) => {
   }
 
   return (
-    <div className='bg-blue-700 text-center- m-[26px] pt-6px] pb-[20px] rounded-[12px] shadow-md'>
+    <div className='bg-blue-400 text-center m-[26px] px-[20px] py-[20px] rounded-[12px] shadow-md'>
       <h1 className=" ">{subscribe}</h1>
       <p className=" ">{signUp}</p>
       <form onSubmit={handleSubmit}>
-        <input className='bg-blue-700 border-none rounded-[8px] px-[9px] py-0 m-[3px] mt-[30px] w-[140px]'
+        <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[180px]'
           type="text" id="fName" onChange={fNameHandler} placeholder="First Name" /* required *//>
-        <input className='bg-blue-700 border-none rounded-[8px] px-[9px] py-0 m-[3px] mt-[30px] w-[140px]'
+        <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[180px]'
           type="text" id="lName" onChange={lNameHandler} placeholder="Last Name"/>
-        <input className='bg-blue-700 border-none rounded-[8px] px-[9px] py-0 m-[3px] mt-[30px] w-[140px]'
+        <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[180px]'
           type="email" id="mail" onChange={mailHandler} placeholder="Email" /* required *//><br/>
-        <button className='bg-red-700 border-none border-radius px-[8px] py-[85px] m-[16px] text-white cursor-pointer'>{signupbtn}</button>
+        <button className='bg-red-700 rounded-[13px] py-[8px] px-[85px] m-[16px] text-white cursor-pointer'>{signupbtn}</button>
       </form> 
     </div>
   )

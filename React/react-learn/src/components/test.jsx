@@ -56,27 +56,33 @@ const Test = () => {
   }
 
     return (
-      <div>
+      <div className="bg-blue-400 text-center my-[10px] p-[15px]">
         <h1>Welcome to the World of Events</h1>
 
-        <button onClick={handleClick}>Click Me</button>
-        <button onMouseMove={handleMouseMove}>Move mouse on me</button>
-        <p onCopy={handleCopy}>
+        <button className="bg-red-500 p-[8px] m-1 rounded-[10px]"
+          onClick={handleClick}>Click Me</button> {/* <br/> */}
+        <button className="bg-yellow-500 p-[8px] rounded-[10px]"
+          onMouseMove={handleMouseMove}>Move mouse on me</button>
+        <p className="bg-green-600 m-1 p-[8px] rounded-[10px]"
+          onCopy={handleCopy}>
           Check copy right permission by copying this text
         </p>
 
-        <p>{value.message}</p>
+        <p className="bg-purple-700 m-1 p-[8px] rounded-[10px]">{value.message}</p>
         <label htmlFor=''> Test for onKeyPress Event: </label>
-        <input type='text' onKeyPress={handleKeyPress} />
+        <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] w-[180px]'
+          type='text' onKeyPress={handleKeyPress} />
         <br />
 
         <label htmlFor=''> Test for onBlur Event: </label>
-        <input type='text' onBlur={handleBlur} />
+        <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] w-[180px]'
+          type='text' onBlur={handleBlur} />
 
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor='firstName'>First Name: </label>
             <input
+              className='rounded-[8px] px-[9px] py-[4px] m-[3px] w-[180px]'
               onChange={handleChange}
               name='firstName'
               value={value.message}

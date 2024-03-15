@@ -3,7 +3,8 @@ import React, {Component} from 'react'
 class HexaColors extends Component {
   render () {
       return (
-        <div className="bg-blue-700 m-[26px] p-[23px] rounded-[12px] shadow-md text-center text-[30px] text-black">
+        <div className="bg-blue-400 m-[10px] p-[23px] rounded-[12px]
+         shadow-md text-center text-[30px] text-black">
           {this.props.hexMap}
         </div>
         //add buttons to each for onclick

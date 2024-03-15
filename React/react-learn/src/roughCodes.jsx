@@ -1,3 +1,55 @@
+/* const UserCard = (props) => {
+    const userCardElements = props.userCardElements
+    const {author, role, skillsHeading, dateJoined} = userCardElements
+    const {firstname, lastname} = author
+  
+    //2nd destructuring method- single line method
+    const {
+      author: {firstname, lastname},
+      role, 
+      skillsHeading, 
+      dateJoined
+    } = userCardElements
+    
+    //3rd destructuring method- bracket method
+    /*const UserCard = ({
+      userCardElements: {
+        author: {firstname, lastname},
+        role, 
+        skillsHeading, 
+        dateJoined
+      }
+    }) => { return (...)}
+  
+    return (
+      <div className="DivUserCard">
+        <TiaImg />
+        <h3>{firstname} {lastname}</h3>
+        <p>{role}</p>
+        <h3>{skillsHeading}</h3>
+        <div className="skills flex">
+          <p className="skills flex">{props.skillsMap}</p>
+        </div>
+        <p>{dateJoined}</p>
+      </div>
+    )
+  } */
+
+  /* function passing in react
+  function App() {
+    const handleClick = () => {
+      console.log('Button click ...');
+    };
+  
+    return (
+      <div>
+        <button type="button" onClick={handleClick}>
+          Event Handler
+        </button>
+      </div>
+    );
+  } */
+
 /* export default function App() {
   const [text, setText] = React.useState('Invalid message');
   const [input, setInput] = React.useState('');
