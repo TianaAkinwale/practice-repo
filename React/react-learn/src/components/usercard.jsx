@@ -9,7 +9,8 @@ const UserCard = ({ userCardElements, /* skillsMap */ }/* or props */) => {
   const [newSkill, setNewSkill] = useState('')
 
  const addSkill = () => {
-  if (newSkill.trim() !== ''/*  && !>= 6 */) {
+/*   const newsSkill = prompt('en ter')
+ */  if (newSkill.trim() !== ''/*  && !>= 6 */) {
     setSkills([...skills, newSkill])
  /*  setNewSkill('hhh') */
  }
