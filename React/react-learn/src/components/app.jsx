@@ -3,22 +3,12 @@ import HexaColors from './hexacolors'
 import SignUp from './signup'
 import Counter from './counter'
 import Test from './test'
-import NumberGene from './NumberGene'
+/* import TodoList from './test1'
+ */import NumberGene from './NumberGene'
 
 const App = () => {
- /*  props in app is ony for props ill use universally.
-  move these to separate files */
-
-  //other elements put in object form
-  const userCardElements = {
-    author: {
-      firstname: 'IYANUOLUWA',
-      lastname: 'AKINWALE'
-    },
-    role: 'Software Engineer, Nigeria',
-    skillsHeading: 'Skills',
-    dateJoined: new Date().getDay(),
-  }
+ /*props in app is ony for props ill use universally.
+  move these to separate files */  
 
   //hexacolor props
   const colorFunction = () => {
@@ -65,12 +55,8 @@ const App = () => {
   
   return (
     <div>
-      <Test />
-      <Counter />
-      <UserCard
-        /* skillsMap={skillsMap} */
-        userCardElements={userCardElements}
-      />
+{/*       <TodoList />
+ */}      <UserCard />
       <HexaColors
         hexMap={hexMap}
       />
