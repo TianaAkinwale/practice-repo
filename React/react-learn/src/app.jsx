@@ -2,9 +2,9 @@ import {Routes, Route} from 'react-router-dom'
 import UserCard from './components/usercard'
 import HexaColors from './components/hexacolors'
 import SignUp from './components/signup'
+import LogIn from './components/login'
 import Counter from './components/counter'
-import Test from './components/eventsWorld'
-import TodoList from './test1'
+import EventWorld from './components/eventsWorld'
 import NumberGene from './components/NumberGene'
 
 const App = () => {
@@ -49,15 +49,14 @@ const App = () => {
   
   return (
     <Routes>
-      <Route index element={<SignUp />} />
+      <Route index element={<LogIn />} />
       <Route path="signup" element={<SignUp />} />
-{/*       <Route path="login" element={<Login />} />   
- */}      <Route path="usercard" element={<UserCard />} />    
+      <Route path="login" element={<LogIn />} />   
+      <Route path="usercard" element={<UserCard />} />    
       <Route path="hexacolor" element={<HexaColors hexMap={hexMap}/>} />    
       <Route path="numgene" element={<NumberGene numsMap={numsMap}/>} />    
-      <Route path="TodoList" element={<TodoList />} />    
       <Route path="Counter" element={<Counter />} />    
-      <Route path="Test" element={<Test />} />    
+      <Route path="eventsWorld" element={<EventWorld />} />    
     </Routes>    
   )
 }

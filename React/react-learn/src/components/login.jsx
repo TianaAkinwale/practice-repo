@@ -60,15 +60,19 @@ const LogIn = () => {
       <h1 className=" ">Login</h1>
       <form onSubmit={handleSubmit}>
         <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[180px]'
-          type="password" name="password" onChange={handleFormChange} value={formData.password} placeholder="Password" /* required *//><br/>
+          type="email" name="email" onChange={handleFormChange} 
+          value={loginData.password} placeholder="Email" required/><br/>
+        <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[180px]'
+          type="password" name="password" onChange={handleFormChange} 
+          value={loginData.password} placeholder="Password" /* required *//><br/>
         <p>{message.message}</p>  
         <button className='bg-red-700 rounded-[13px] py-[8px] px-[85px] m-[16px] text-white cursor-pointer' type='submit'>
-          {signupbtn}</button>
+          Log In</button>
       </form> 
 
       {!authenticated ? (
         <button className="bg-yellow-400 p-[8px] m-1 ml-0 rounded-[10px]"
-          onClick={handleLogin}>Log In</button>
+          onClick={() => navigateTo("/")}>Log In</button>
       ) : (
         <button className="bg-yellow-400 p-[8px] m-1 ml-0 rounded-[10px]"
           onClick={handleLogout}>Log out</button>

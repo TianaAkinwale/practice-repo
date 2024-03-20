@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const Test = () => {
+const EventWorld = () => {
     const [value, setValue] = useState({
     firstName: '',
     message: '',
@@ -97,4 +97,4 @@ const Test = () => {
     )
   }
 
-export default Test
+export default EventWorld

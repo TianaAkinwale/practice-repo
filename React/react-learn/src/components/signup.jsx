@@ -21,13 +21,11 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (authenticated) {
-      localStorage.setItem('formData', JSON.stringify(formData))
-      setMessage({message: 'form submitted'})
-    }
-    else {
+    localStorage.setItem('formData', JSON.stringify(formData))
+    setMessage({message: 'form updated'})
+   /*  else {
       setMessage({message: 'Please log in to submit form'})
-    }
+    } */
     setFormData({
       fullName: '',
       email: '',
