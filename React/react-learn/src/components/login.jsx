@@ -72,10 +72,10 @@ const LogIn = () => {
 
       {!authenticated ? (
         <button className="bg-yellow-400 p-[8px] m-1 ml-0 rounded-[10px]"
-          onClick={() => navigateTo("/")}>Log In</button>
+          onClick={handleLogin}>Log In</button>
       ) : (
         <button className="bg-yellow-400 p-[8px] m-1 ml-0 rounded-[10px]"
-          onClick={handleLogout}>Log out</button>
+          onClick={() => navigateTo("/usercard")}>Log out</button>
       )}
     </div>
   )
