@@ -12,15 +12,12 @@ const UserCard = () => {
     dateJoined: new Date().getDay(),*/  
   })
  const [newProfile, setNewProfile] = useState('')
-  const editProfile = () => {
-   /*   const newsSkill = prompt('enter')
- */  if (newProfile.trim() !== '') {
+  const editProfile = (e) => {
+    /* if (newProfile.trim() !== '') {
       setProfile(...profile, 
-        {author: {
-        ...profile.author,
-        firstname: newProfile,
-      }})
-    }
+        {[name]: value}
+      )
+    } */
   }
 
   const [skills, setSkills] = useState([
@@ -59,7 +56,7 @@ const UserCard = () => {
 {/*       <button onClick={saveProfile}>Save Changes</button>
  */}      <button onClick={editProfile}
           className="bg-yellow-400 p-[8px] m-1 ml-0 rounded-[10px]">
-        <a href="#settingsDiv">Edit profile</a></button>
+        <a href="#settingsDiv">Edit name</a></button>
       
 {/*       <h3 >{skillsHeading}</h3>
  */}        <div className=" ">

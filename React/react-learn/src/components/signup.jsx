@@ -1,56 +1,56 @@
 //Sign up component
-import React, { useState } from 'react'
+import React, { useState, /* useEffect */ } from 'react'
 
-const SignUp = ({ signUpElements }) => {
-  const { subscribe, signUp, signupbtn } = signUpElements
+const SignUp = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    mail: '',
+    fullName: '',
+    email: '',
+    role: '',
+    country: '',
+    other: '',
   })
+  const [message, setMessage] = useState('Please, log in to use form')
 
-  const fNameHandler = (e) => {
+  const handleFormChange = (e) => {
+    const {name, value} = e.target
     setFormData(prevState => ({
       ...prevState,
-      firstName: e.target.value,
-    }))
-  }
-  const lNameHandler = (e) => {
-    setFormData(prevState => ({
-      ...prevState,
-      lastName: e.target.value,
-    }))
-  }
-  const mailHandler = (e) => {
-    setFormData(prevState => ({
-      ...prevState,
-      mail: e.target.value,
+      [name]: value
     }))
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(formData)
+    if (authenticated) {
+      localStorage.setItem('formData', JSON.stringify(formData))
+      setMessage({message: 'form submitted'})
+    }
+    else {
+      setMessage({message: 'Please log in to submit form'})
+    }
     setFormData({
-      firstName: '',
-      lastName: '',
-      mail: '',
+      fullName: '',
+      email: '',
+      role: '',
+      country: '',
+      other: '',
     });
-    // Do something with the form data
   }
-
+ 
   return (
     <div className='bg-blue-400 text-center m-[26px] px-[20px] py-[20px] rounded-[12px] shadow-md'>
-      <h1 className=" ">{subscribe}</h1>
-      <p className=" ">{signUp}</p>
+      <h1 className=" ">SUBSCRIBE</h1>
+      <p className=" ">Sign up with your email address to receive news and updates</p>
       <form onSubmit={handleSubmit}>
         <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[180px]'
-          type="text" id="fName" onChange={fNameHandler} placeholder="First Name" /* required *//>
+          type="text" name="fullName" onChange={handleFormChange} value={formData.firstName} placeholder="First Name" /* required *//>
         <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[180px]'
-          type="text" id="lName" onChange={lNameHandler} placeholder="Last Name"/>
+          type="email" name="email" onChange={handleFormChange} value={formData.mail} placeholder="Email" /* required *//>
         <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[180px]'
-          type="email" id="mail" onChange={mailHandler} placeholder="Email" /* required *//><br/>
-        <button className='bg-red-700 rounded-[13px] py-[8px] px-[85px] m-[16px] text-white cursor-pointer'>{signupbtn}</button>
+          type="password" name="password" onChange={handleFormChange} value={formData.password} placeholder="Password" /* required *//><br/>
+        <p>{message.message}</p>
+        <button className='bg-red-700 rounded-[13px] py-[8px] px-[85px] m-[16px] text-white cursor-pointer' type='submit'>
+        Subscribe</button>
       </form> 
     </div>
   )
