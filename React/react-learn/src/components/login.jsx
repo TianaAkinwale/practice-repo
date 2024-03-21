@@ -6,17 +6,18 @@ const LogIn = () => {
     const navigateTo = useNavigate();
 
   const [loginData, setLoginData] = useState({
-    mail: '',
+    email: '',
     password: '',
   })
   
   const [authenticated, setAuthenticated] = useState(false)
-  const [message, setMessage] = useState('Please, log in to use form')
+  const [message, setMessage] = useState('')
 
-  useEffect(() => {
+  /* useEffect(() => {
     const authToken = localStorage.getItem('authToken')
     setAuthenticated(!!authToken)
-  })
+    console.log('auththokennnn new nw ewnw saved')
+  }) */
 
   const handleFormChange = (e) => {
     const {name, value} = e.target
@@ -26,59 +27,53 @@ const LogIn = () => {
     }))
   }
 
+  const handleLogin = () => {
+    if (loginData.email && loginData.password !== '') {
+      setAuthenticated(true)
+        console.log('setAuthenticated(true)')
+      setMessage({message: 'log in successful'})
+        console.log('login successful')
+      navigateTo('/usercard')
+        console.log('now in usercard')
+    }
+    else {
+      setMessage({message: 'Please, enter login correct details'})
+      console.log('user entered wrong details')
+    }
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
     if (authenticated) {
-      localStorage.setItem('formData', JSON.stringify(formData))
+      localStorage.setItem('formData', JSON.stringify(loginData))
       setMessage({message: 'form submitted'})
-    }
-    else {
-      setMessage({message: 'Please log in to submit form'})
+        console.log('loginData now saved')
+      localStorage.setItem('authToken', 'sampleAuthToken')
+        console.log('authToken saved')
     }
     setLoginData({
-      mail: '',
+      email: '',
       password: '',
     });
   }
-
-  const handleLogin = () => {
-    
-    localStorage.setItem('authToken', 'sampleAuthToken')
-    setAuthenticated(true)
-    setMessage({message: 'log in successful'})
-    navigateTo('usercard/')
-  }
-
-  /* const handleLogout = () => {
-    localStorage.removeItem('authToken')
-    setAuthenticated(false)
-    setMessage({message: 'log out successful'})
-  } */
 
   return (
     <div className='bg-blue-400 text-center m-[26px] px-[20px] py-[20px] rounded-[12px] shadow-md'>
       <h1 className=" ">Login</h1>
       <form onSubmit={handleSubmit}>
-        <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[180px]'
+        <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[270px]'
           type="email" name="email" onChange={handleFormChange} 
-          value={loginData.password} placeholder="Email" required/><br/>
-        <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[180px]'
+          value={loginData.email} placeholder="Email" /><br/>
+        <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[270px]'
           type="password" name="password" onChange={handleFormChange} 
-          value={loginData.password} placeholder="Password" /* required *//><br/>
-        <p>{message.message}</p>  
-        <button className='bg-red-700 rounded-[13px] py-[8px] px-[85px] m-[16px] text-white cursor-pointer' type='submit'>
-          Log In</button>
+          value={loginData.password} placeholder="Password" /><br/>
+        <p className="bg-red-400 p-[8px] m-1 ml-0 rounded-[10px]">{message.message}</p> 
+        <button className="bg-yellow-400 p-[8px] m-1 ml-0 rounded-[10px]"
+          onClick={handleLogin} type='submit'>Sign In</button>
       </form> 
-
-      {!authenticated ? (
-        <button className="bg-yellow-400 p-[8px] m-1 ml-0 rounded-[10px]"
-          onClick={handleLogin}>Log In</button>
-      ) : (
-        <button className="bg-yellow-400 p-[8px] m-1 ml-0 rounded-[10px]"
-          onClick={() => navigateTo("/usercard")}>Log out</button>
-      )}
     </div>
   )
 }
-
+{/* <button className="bg-red-400 p-[8px] m-1 ml-0 rounded-[10px]"
+          onClick={() => navigateTo("/usercard")} type='submit'>Sign In</button> */}
 export default LogIn

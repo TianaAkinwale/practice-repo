@@ -37,7 +37,7 @@ const SignUp = () => {
  
   return (
     <div className='bg-blue-400 text-center m-[26px] px-[20px] py-[20px] rounded-[12px] shadow-md'>
-      <h1 className=" ">SUBSCRIBE</h1>
+      <h1 className=" ">Sign Up</h1>
       <p className=" ">Sign up with your email address to receive news and updates</p>
       <form onSubmit={handleSubmit}>
         <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[180px]'

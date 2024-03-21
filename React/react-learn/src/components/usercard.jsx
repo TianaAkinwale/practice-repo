@@ -1,7 +1,11 @@
 import {  useState } from 'react'
+import {useNavigate} from 'react-router-dom'
 import TianaImage from '../images/slack-dp.jpeg'
 
 const UserCard = () => {
+  const navigateTo = useNavigate();
+
+  const [authenticated, setAuthenticated] = useState(false)
   const [profile, setProfile] = useState({
     author: {
       firstname: 'Iyanuoluwa',
@@ -41,6 +45,13 @@ const UserCard = () => {
     dateJoined, */
   } = profile;
 
+  const handleLogout = () => {
+    localStorage.removeItem('authToken')
+    setAuthenticated(authenticated)
+    navigateTo('/login')
+        console.log('log out successful')
+  } 
+
   return (
     <div className="bg-blue-400 m-[10px] px-[26px] py-[25px] rounded-[25px] shadow-md">
       <img className="h-[180px] w-[150px] rounded-[100px]"
@@ -53,10 +64,10 @@ const UserCard = () => {
         value={newProfile}
         onChange={(e) => setNewProfile(e.target.value)}
       />
-{/*       <button onClick={saveProfile}>Save Changes</button>
- */}      <button onClick={editProfile}
-          className="bg-yellow-400 p-[8px] m-1 ml-0 rounded-[10px]">
-        <a href="#settingsDiv">Edit name</a></button>
+      <button onClick={handleLogout}
+        className="bg-yellow-400 p-[8px] m-1 ml-0 rounded-[10px]">Log Out</button>
+      <button onClick={editProfile}
+          className="bg-yellow-400 p-[8px] m-1 ml-0 rounded-[10px]">Edit name</button>
       
 {/*       <h3 >{skillsHeading}</h3>
  */}        <div className=" ">
