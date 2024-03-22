@@ -28,6 +28,7 @@ const LogIn = () => {
   }
 
   const handleLogin = () => {
+    e.preventDefault()
     if (loginData.email && loginData.password !== '') {
       setAuthenticated(true)
         console.log('setAuthenticated(true)')
