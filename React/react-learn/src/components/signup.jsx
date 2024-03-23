@@ -25,7 +25,7 @@ const SignUp = () => {
 
   const handleSignUp = (e) => {
     e.preventDefault()
-    const storedData = JSON.parse(localStorage.getItem('loginData'))
+    const storedSignUpData = JSON.parse(localStorage.getItem('signUpData')) || []
     if (!signUpData.email || !signUpData.password/* <= 5 */) {
       setMessage('Please, fill the form to sign up')
       console.log('user didnt fill form')
@@ -34,20 +34,22 @@ const SignUp = () => {
       setMessage('Passwords do not match')
       console.log('user typed different passwords')
     }
-    else if (storedData[signUpData.email]) {
-      setMessage('User exist please log in')
+    else if (storedSignUpData.some(data => data.email === signUpData.email)) {
+      setMessage('User exists, please log in')
       console.log('existing user tried to sign up')  
     }
     else {
-      /* setAuthenticated(false)
-        console.log('setAuthenticated(false)') */
-        localStorage.setItem('signUpData', JSON.stringify(([...storedData, signUpData])))
-        localStorage.setItem('loginData', JSON.stringify(
-          { email: signUpData.email, password: signUpData.password }));
+        const updatedSignUpData = [...storedSignUpData, signUpData]
+        localStorage.setItem('signUpData', JSON.stringify(updatedSignUpData))
+
+        const loginData = JSON.parse(localStorage.getItem('loginData')) || []
+        const updatedLoginData = {...loginData, email: signUpData.email,  password: signUpData.password}
+        localStorage.setItem('loginData', JSON.stringify(updatedLoginData))
+       
         console.log('form submitted / sign up successful')
-      navigateTo('/usercard')
+        navigateTo('/usercard')
         console.log('now in usercard')
-        signUpData({
+        setSignUpData({
           fullName: '',
           email: '',
           role: '',
