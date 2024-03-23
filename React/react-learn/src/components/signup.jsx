@@ -58,15 +58,6 @@ const SignUp = () => {
     }
   }
 
-      setMessage('User already exists, please log in');
-    } else {
-      // Add the new signup data with a unique identifier
-      storedData[signUpData.email] = signUpData;
-      localStorage.setItem('signUpData', JSON.stringify(storedData));
-      localStorage.setItem('loginData', JSON.stringify({ email: signUpData.email, password: signUpData.password }));
-      setMessage('Sign up successful');
-  
-
   return (
     <div className='bg-blue-400 text-center m-[26px] px-[20px] py-[20px] rounded-[12px] shadow-md'>
       <h1 className=" ">Login details</h1>
