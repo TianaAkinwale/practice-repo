@@ -34,8 +34,8 @@ const SignUp = () => {
       /* setAuthenticated(false)
         console.log('setAuthenticated(false)') */
         localStorage.setItem('signUpData', JSON.stringify(signUpData))
-        localStorage.setItem('loginData', JSON.stringify(signUpData.email))
-        localStorage.setItem('loginData', JSON.stringify(signUpData.password))
+        localStorage.setItem('loginData', JSON.stringify(
+          { email: signUpData.email, password: signUpData.password })
         console.log('form submitted / sign up successful')
       navigateTo('/usercard')
         console.log('now in usercard')
