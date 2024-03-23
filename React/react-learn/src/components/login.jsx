@@ -27,54 +27,50 @@ const LogIn = () => {
     }))
   }
 
-  const handleLogin = () => {
+  const handleLogin = (e) => {
     e.preventDefault()
-    if (loginData.email && loginData.password !== '') {
+    const storedData = JSON.parse(localStorage.getItem('loginData'))
+    if (storedData && storedData.email === loginData.email && storedData.password === loginData.password) {
       setAuthenticated(true)
         console.log('setAuthenticated(true)')
-      setMessage({message: 'log in successful'})
-        console.log('login successful')
+/*         localStorage.setItem('loginData', JSON.stringify(loginData))
+ */        console.log('form submitted / log in successful')
       navigateTo('/usercard')
         console.log('now in usercard')
+        /* setLoginData({
+          email: '',
+          password: '',
+        })  */  
+    }
+    else if (storedData && storedData.email !== loginData.email) {
+      setMessage('User does not exist, sign up')
+      console.log('non existing user tried to sign up')
     }
     else {
-      setMessage({message: 'Please, enter login correct details'})
+      setMessage('Please, enter correct login details')
       console.log('user entered wrong details')
     }
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    if (authenticated) {
-      localStorage.setItem('formData', JSON.stringify(loginData))
-      setMessage({message: 'form submitted'})
-        console.log('loginData now saved')
-      localStorage.setItem('authToken', 'sampleAuthToken')
-        console.log('authToken saved')
-    }
-    setLoginData({
-      email: '',
-      password: '',
-    });
-  }
-
   return (
     <div className='bg-blue-400 text-center m-[26px] px-[20px] py-[20px] rounded-[12px] shadow-md'>
-      <h1 className=" ">Login</h1>
-      <form onSubmit={handleSubmit}>
+      <h1 className=" ">Login details</h1>
+      <form onSubmit={handleLogin}>   
         <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[270px]'
           type="email" name="email" onChange={handleFormChange} 
           value={loginData.email} placeholder="Email" /><br/>
         <input className='rounded-[8px] px-[9px] py-[4px] m-[3px] mt-[30px] w-[270px]'
           type="password" name="password" onChange={handleFormChange} 
           value={loginData.password} placeholder="Password" /><br/>
-        <p className="bg-red-400 p-[8px] m-1 ml-0 rounded-[10px]">{message.message}</p> 
-        <button className="bg-yellow-400 p-[8px] m-1 ml-0 rounded-[10px]"
-          onClick={handleLogin} type='submit'>Sign In</button>
+        <p className="bg-red-400 p-[8px] m-1 ml-0 rounded-[10px]">{message}</p> 
+        <button className="bg-red-700 p-[8px] m-1 ml-0 rounded-[10px] text-white"
+         type='submit'>Sign In</button>
       </form> 
+      <p className="bg-green-400 p-[8px] m-1 ml-0 rounded-[10px]">
+        Don't have an account? <b className='cursor-pointer'
+        onClick={() => navigateTo('/signup')}>Sign Up</b></p> 
     </div>
   )
 }
-{/* <button className="bg-red-400 p-[8px] m-1 ml-0 rounded-[10px]"
-          onClick={() => navigateTo("/usercard")} type='submit'>Sign In</button> */}
+
 export default LogIn

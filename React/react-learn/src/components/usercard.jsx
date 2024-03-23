@@ -50,6 +50,7 @@ const UserCard = () => {
     setAuthenticated(authenticated)
     navigateTo('/login')
         console.log('log out successful')
+        console.log('now in login')
   } 
 
   return (
