@@ -26,43 +26,47 @@ const SignUp = () => {
   const handleSignUp = (e) => {
     e.preventDefault()
     const storedData = JSON.parse(localStorage.getItem('loginData'))
-    if (signUpData.email && signUpData.password === ''/* <= 5 */) {
+    if (!signUpData.email || !signUpData.password/* <= 5 */) {
       setMessage('Please, fill the form to sign up')
       console.log('user didnt fill form')
-    }
-    else if (storedData && storedData.email !== signUpData.email) {
-      /* setAuthenticated(false)
-        console.log('setAuthenticated(false)') */
-        localStorage.setItem('signUpData', JSON.stringify(signUpData))
-        localStorage.setItem('loginData', JSON.stringify(signUpData.email))
-        localStorage.setItem('loginData', JSON.stringify(signUpData.password))
-        console.log('form submitted / sign up successful')
-      navigateTo('/usercard')
-        console.log('now in usercard')
-        /* signUpData({
-          fullName: '',
-          email: '',
-
-using usestate and useeffect(only if necessary) i want to store the user's signup details in localstorage, and i want to put the email and password in localstorage under login data, how do i do that. my code is above. 
-
-after solving that, you can help me with updating the login data in a way that, i dont want it to replace the data there but i want the new user data to be appended to the exisitng data. thanks.
-          
-          role: '',
-          country: '',
-          password: '',
-          confirmPassword: '',
-        })  */ 
     }
     else if (signUpData.password !== signUpData.confirmPassword) {
       setMessage('Passwords do not match')
       console.log('user typed different passwords')
     }
-    else {
+    else if (storedData[signUpData.email]) {
       setMessage('User exist please log in')
-      console.log('existing user tried to sign up')
+      console.log('existing user tried to sign up')  
+    }
+    else {
+      /* setAuthenticated(false)
+        console.log('setAuthenticated(false)') */
+        localStorage.setItem('signUpData', JSON.stringify(([...storedData, signUpData])))
+        localStorage.setItem('loginData', JSON.stringify(
+          { email: signUpData.email, password: signUpData.password }));
+        console.log('form submitted / sign up successful')
+      navigateTo('/usercard')
+        console.log('now in usercard')
+        signUpData({
+          fullName: '',
+          email: '',
+          role: '',
+          country: '',
+          password: '',
+          confirmPassword: '',
+        })
     }
   }
- 
+
+      setMessage('User already exists, please log in');
+    } else {
+      // Add the new signup data with a unique identifier
+      storedData[signUpData.email] = signUpData;
+      localStorage.setItem('signUpData', JSON.stringify(storedData));
+      localStorage.setItem('loginData', JSON.stringify({ email: signUpData.email, password: signUpData.password }));
+      setMessage('Sign up successful');
+  
+
   return (
     <div className='bg-blue-400 text-center m-[26px] px-[20px] py-[20px] rounded-[12px] shadow-md'>
       <h1 className=" ">Login details</h1>
