@@ -46,12 +46,13 @@ const LogIn = () => {
           email: '',
           password: '',
         })  
-    } else if (!user) {
-      setMessage('User does not exist, sign up');
-      console.log('non-existing user tried to sign up');
     } else {
       setMessage('Invalid email or password');
-      console.log('user entered wrong details');
+      setLoginData({
+        email: '',
+        password: '',
+      })
+      console.log('user entered wrong details, reset form');
     }
   }
 
