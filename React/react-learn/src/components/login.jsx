@@ -1,4 +1,4 @@
-//Sign up component
+//log in component
 import React, { useState, useEffect } from 'react'
 import {useNavigate} from 'react-router-dom'
 
@@ -28,27 +28,30 @@ const LogIn = () => {
   }
 
   const handleLogin = (e) => {
-    e.preventDefault()
-    const storedData = JSON.parse(localStorage.getItem('loginData'))
-    if (storedData && storedData.email === loginData.email && storedData.password === loginData.password) {
-      setAuthenticated(true)
-        console.log('setAuthenticated(true)')
-/*         localStorage.setItem('loginData', JSON.stringify(loginData))
- */        console.log('form submitted / log in successful')
-      navigateTo('/usercard')
-        console.log('now in usercard')
-        /* setLoginData({
+    e.preventDefault();
+    const storedLoginData = JSON.parse(localStorage.getItem('loginData')) || {};
+    console.log('storedLoginData:', storedLoginData)
+    const users = Object.values(storedLoginData); // Convert object values to array
+    console.log('users:', users)
+    const user = users.find(
+    (user) => user.email === loginData.email && user.password === loginData.password
+  )
+    if (user) {
+    setAuthenticated(true);
+      console.log('setAuthenticated(true)');
+      console.log('form submitted / log in successful');
+      navigateTo('/usercard');
+      console.log('now in usercard')
+        setLoginData({
           email: '',
           password: '',
-        })  */  
-    }
-    else if (storedData && storedData.email !== loginData.email) {
-      setMessage('User does not exist, sign up')
-      console.log('non existing user tried to sign up')
-    }
-    else {
-      setMessage('Please, enter correct login details')
-      console.log('user entered wrong details')
+        })  
+    } else if (!user) {
+      setMessage('User does not exist, sign up');
+      console.log('non-existing user tried to sign up');
+    } else {
+      setMessage('Invalid email or password');
+      console.log('user entered wrong details');
     }
   }
 
