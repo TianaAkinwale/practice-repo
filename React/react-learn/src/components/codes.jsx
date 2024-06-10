@@ -1,3 +1,76 @@
+/* Here are three examples of using `useEffect` hook in web apps:
+/* //declare promise
+function getWeather() {
+    return new Promise(function(resolve, reject) {
+        setTimeout(() => {
+            resolve('Sunny')
+        }, 100)
+    })
+}
+
+function getWeatherIcon(weather) {
+    return new Promise(function(resolve, reject) {
+        setTimeout(() => {
+            switch (weather) {
+                case 'Sunny':
+                    resolve('Sun')
+                    break;
+                case 'Cloudy':
+                    resolve('Cloud')
+                    break;
+                case 'Rainy':
+                    resolve('Rain')
+                    break;
+
+                default:
+                    reject('NOT FOUND')
+            }
+        }, 100)
+    })
+}
+
+
+//function for then, which takes 2 params, resolve and reject params
+function onSuccess(data) {
+    console.log(`success ${data}`)
+}
+function onError() {
+    console.log(`error occured`)
+}
+function inTheEnd() {
+    console.log(`finally func`)
+}
+
+getWeather()
+.then(getWeatherIcon) //this receives the weather param bc what gets
+//resolved as data in the first function gets pssed to this as param
+//as they are chained promises
+.then(onSuccess)
+.catch(onError)
+.finally(inTheEnd)
+ */
+
+
+/* function fetchData() {
+    return new Promise(function(resolve, reject) {
+        fetch('https://api.weather.gov/gridpoints/OKKX/35,35/forecast')
+            .then(response => response.json())
+            .then(data => resolve(data.properties.periods[1].shortForecasts))
+})
+}
+
+function displayData(weather) {
+    console.log(weather)
+}
+function onError() {
+    console.log(`error ${err}`)
+}
+
+fetchData()
+    .then(displayData)
+    .catch(onError)
+ */
+
 /* import React, { useState } from 'react';
 
 function ImageGallery() {
